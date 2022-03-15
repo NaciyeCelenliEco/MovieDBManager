@@ -14,6 +14,7 @@
 		00467DB627E0D9810065BE0E /* MovieDBManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00467DB527E0D9810065BE0E /* MovieDBManagerTests.swift */; };
 		00467DC027E0D9810065BE0E /* MovieDBManagerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00467DBF27E0D9810065BE0E /* MovieDBManagerUITests.swift */; };
 		00467DC227E0D9810065BE0E /* MovieDBManagerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00467DC127E0D9810065BE0E /* MovieDBManagerUITestsLaunchTests.swift */; };
+		00467DD027E0E8660065BE0E /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00467DCF27E0E8660065BE0E /* TabBarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		00467DBB27E0D9810065BE0E /* MovieDBManagerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovieDBManagerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00467DBF27E0D9810065BE0E /* MovieDBManagerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDBManagerUITests.swift; sourceTree = "<group>"; };
 		00467DC127E0D9810065BE0E /* MovieDBManagerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDBManagerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		00467DCF27E0E8660065BE0E /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 		00467DA327E0D97D0065BE0E /* MovieDBManager */ = {
 			isa = PBXGroup;
 			children = (
+				00467DCE27E0E8480065BE0E /* View */,
 				00467DA427E0D97D0065BE0E /* MovieDBManagerApp.swift */,
 				00467DA627E0D97D0065BE0E /* ContentView.swift */,
 				00467DA827E0D9810065BE0E /* Assets.xcassets */,
@@ -125,6 +128,14 @@
 				00467DC127E0D9810065BE0E /* MovieDBManagerUITestsLaunchTests.swift */,
 			);
 			path = MovieDBManagerUITests;
+			sourceTree = "<group>";
+		};
+		00467DCE27E0E8480065BE0E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				00467DCF27E0E8660065BE0E /* TabBarView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +270,7 @@
 			files = (
 				00467DA727E0D97D0065BE0E /* ContentView.swift in Sources */,
 				00467DA527E0D97D0065BE0E /* MovieDBManagerApp.swift in Sources */,
+				00467DD027E0E8660065BE0E /* TabBarView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

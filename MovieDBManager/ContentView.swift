@@ -53,7 +53,7 @@ struct ContentView: View {
                 }
             
                 else{
-                    //Tabbar
+                    TabBarView()
                 }
             }
         }
@@ -61,7 +61,6 @@ struct ContentView: View {
     }
     func authUser(username: String, password: String)
     {
-        
        showingLoginScreen = false
     }
 }
