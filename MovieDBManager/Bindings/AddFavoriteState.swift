@@ -12,7 +12,7 @@ import Foundation
 class AddFavoriteState: ObservableObject {
     
     @Published var isLoading = false
-    @Published var error: NSError?
+    @Published var error: String = ""
     @Published var addSuccess : Bool = false
     
     init() {

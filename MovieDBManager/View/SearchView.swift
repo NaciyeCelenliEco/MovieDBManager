@@ -17,7 +17,7 @@ struct SearchView: View {
                     .listRowInsets(EdgeInsets(top: 0, leading: 8, bottom: 0, trailing: 8))
 
 
-                LoadingView(isLoading: self.movieSearchState.isLoading, error: self.movieSearchState.error) {
+                LoadingView(isLoading: self.movieSearchState.isLoading, error: self.movieSearchState.error, fullPage:false) {
                     self.movieSearchState.search(query: self.movieSearchState.query)
                 }
 

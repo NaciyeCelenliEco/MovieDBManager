@@ -36,6 +36,8 @@
 		00467E0027E1F3290065BE0E /* AddWatchlistState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00467DFF27E1F3290065BE0E /* AddWatchlistState.swift */; };
 		00467E0327E1F6E60065BE0E /* GetWatchlistState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00467E0227E1F6E60065BE0E /* GetWatchlistState.swift */; };
 		00467E0527E1F7C50065BE0E /* WatchlistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00467E0427E1F7C50065BE0E /* WatchlistView.swift */; };
+		00467E0727E2226D0065BE0E /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00467E0627E2226D0065BE0E /* FavoritesView.swift */; };
+		00467E0927E223D60065BE0E /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00467E0827E223D60065BE0E /* MovieCell.swift */; };
 		625A08EBEA018ECF4C1F64B7 /* Pods_MovieDBManagerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 997BF50429DDA43EC8A056E3 /* Pods_MovieDBManagerTests.framework */; };
 		E1B5115A73F0C7417AC17082 /* Pods_MovieDBManager_MovieDBManagerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D599A81A49129899CE3EFFDE /* Pods_MovieDBManager_MovieDBManagerUITests.framework */; };
 		EDF671A4000CD8FB70F31424 /* Pods_MovieDBManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E0180C9C13F86EA05197516 /* Pods_MovieDBManager.framework */; };
@@ -91,6 +93,8 @@
 		00467DFF27E1F3290065BE0E /* AddWatchlistState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWatchlistState.swift; sourceTree = "<group>"; };
 		00467E0227E1F6E60065BE0E /* GetWatchlistState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetWatchlistState.swift; sourceTree = "<group>"; };
 		00467E0427E1F7C50065BE0E /* WatchlistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchlistView.swift; sourceTree = "<group>"; };
+		00467E0627E2226D0065BE0E /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
+		00467E0827E223D60065BE0E /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 		0E0180C9C13F86EA05197516 /* Pods_MovieDBManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MovieDBManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4376BEAC37F225F51E722668 /* Pods-MovieDBManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieDBManager.debug.xcconfig"; path = "Target Support Files/Pods-MovieDBManager/Pods-MovieDBManager.debug.xcconfig"; sourceTree = "<group>"; };
 		997BF50429DDA43EC8A056E3 /* Pods_MovieDBManagerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MovieDBManagerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -203,6 +207,8 @@
 				00467DF127E13DD50065BE0E /* ActivityIndicatorView.swift */,
 				00467DF327E1C1270065BE0E /* MovieDetailView.swift */,
 				00467E0427E1F7C50065BE0E /* WatchlistView.swift */,
+				00467E0627E2226D0065BE0E /* FavoritesView.swift */,
+				00467E0827E223D60065BE0E /* MovieCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -511,6 +517,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00467E0927E223D60065BE0E /* MovieCell.swift in Sources */,
 				00467DF627E1C1480065BE0E /* MovieDetailState.swift in Sources */,
 				00467E0027E1F3290065BE0E /* AddWatchlistState.swift in Sources */,
 				00467DDD27E0FF990065BE0E /* Response.swift in Sources */,
@@ -531,6 +538,7 @@
 				00467DD027E0E8660065BE0E /* TabBarView.swift in Sources */,
 				00467DEE27E137890065BE0E /* SearchBarView.swift in Sources */,
 				00467DE127E0FFA80065BE0E /* BaseRequestManager.swift in Sources */,
+				00467E0727E2226D0065BE0E /* FavoritesView.swift in Sources */,
 				00467E0327E1F6E60065BE0E /* GetWatchlistState.swift in Sources */,
 				00467DE727E131600065BE0E /* Constants.swift in Sources */,
 				00467DF427E1C1270065BE0E /* MovieDetailView.swift in Sources */,

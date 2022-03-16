@@ -14,7 +14,7 @@ class SearchState: ObservableObject {
     @Published var query = ""
     @Published var movies: [Search.SearchResult] = []
     @Published var isLoading = false
-    @Published var error: NSError?
+    @Published var error: String = ""
     
     private var subscriptionToken: AnyCancellable?
     
@@ -30,7 +30,7 @@ class SearchState: ObservableObject {
         self.subscriptionToken = self.$query
             .map { [weak self] text in
                 self?.movies = []
-                self?.error = nil
+                self?.error = ""
                 return text
 
         }.throttle(for: 1, scheduler: DispatchQueue.main, latest: true)

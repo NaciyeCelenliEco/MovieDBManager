@@ -12,7 +12,7 @@ import Foundation
 class GetWatchlistState: ObservableObject {
     
     @Published var isLoading = false
-    @Published var error: NSError?
+    @Published var error: String = ""
     @Published var items: [MovieListResult] = []
 
     func getList() {

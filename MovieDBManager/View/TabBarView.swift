@@ -11,23 +11,23 @@ struct TabBarView: View {
     var body: some View {
         TabView{
             SearchView()
-                    .tabItem{
-                        Image(systemName: "house")
-                        Text("Search")
-                    }
+                .tabItem{
+                    Image(systemName: "house")
+                    Text("Search")
+                }
             WatchlistView()
                 .tabItem{
-                    Image(systemName: "gear")
+                    Image(systemName: "bookmark")
                     Text("Watchlist")
                 }
-            Text("Favorites")
+            FavoritesView()
                 .tabItem{
-                    Image(systemName: "gear")
+                    Image(systemName: "heart.fill")
                     Text("Favorites")
                 }
         }
         .navigationBarTitle("")
-              .navigationBarHidden(true)
+        .navigationBarHidden(true)
     }
 }
 

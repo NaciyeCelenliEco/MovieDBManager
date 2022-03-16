@@ -18,6 +18,11 @@ struct ContentView: View {
                 Color.blue
                     .ignoresSafeArea()
                 if(!authState.loginSuccess){
+                    if(authState.isLoading){
+                        LoadingView(isLoading: self.authState.isLoading, error: self.authState.error, fullPage:true) {
+                        }
+                    }
+               
                     VStack{
                         Text("The Movie Manager")
                             .font(.largeTitle)
@@ -49,12 +54,16 @@ struct ContentView: View {
                         .cornerRadius(10)
                         Spacer()
                     }
+                    
 
                 }
             
                 else{
                     TabBarView()
                 }
+            }
+            .alert(self.authState.error, isPresented:$authState.showAlert ) {
+                Button("OK", role: .cancel) { }
             }
         }
         .navigationBarHidden(true)
@@ -66,6 +75,17 @@ struct ContentView: View {
         {
             return true
         }
+        else if (email == "")
+        {
+            authState.error = "Enter email"
+        }
+        else if(password == "")
+        {
+            authState.error = "Enter password"
+        }
+     
+        authState.showAlert = true
+ 
         return false
     }
     func authUser()

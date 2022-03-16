@@ -14,7 +14,7 @@ struct MovieDetailView: View {
 
     var body: some View {
         ZStack {
-            LoadingView(isLoading: self.movieDetailState.isLoading, error: self.movieDetailState.error) {
+            LoadingView(isLoading: self.movieDetailState.isLoading, error: self.movieDetailState.error, fullPage:false) {
                 self.movieDetailState.loadMovie(id: self.movieId)
             }
             
@@ -90,19 +90,19 @@ struct MovieDetailListView: View {
             }
              Spacer()
             HStack{
-                Button("Watch") {
+                Button("Watchlist") {
                     watchlist()
                 }
                 .foregroundColor(.white)
-                .frame(width: 30, height: 30)
+                .frame(width: 100, height: 30)
                 .background(Color.indigo)
                 .cornerRadius(5)
                 .disabled(addWatchlistState.addSuccess)
-                Button("Fav") {
+                Button("Favorite") {
                    favorite()
                 }
                 .foregroundColor(.white)
-                .frame(width: 30, height: 30)
+                .frame(width: 100, height: 30)
                 .background(Color.indigo)
                 .cornerRadius(5)
                 .disabled(addFavoriteState.addSuccess)

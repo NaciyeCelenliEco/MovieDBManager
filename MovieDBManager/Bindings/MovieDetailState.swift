@@ -11,7 +11,7 @@ class MovieDetailState: ObservableObject {
     
     @Published var movie: MovieDetail?
     @Published var isLoading = false
-    @Published var error: NSError?
+    @Published var error: String = ""
     
     init() {
 

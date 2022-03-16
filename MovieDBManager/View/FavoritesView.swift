@@ -1,5 +1,5 @@
 //
-//  WatchlistView.swift
+//  FavoritesView.swift
 //  MovieDBManager
 //
 //  Created by Naciye Celenli on 16.03.2022.
@@ -7,22 +7,22 @@
 
 import SwiftUI
 
-struct WatchlistView: View {
-    @ObservedObject var getWatchlistState = GetWatchlistState()
+struct FavoritesView: View {
+    @ObservedObject var getFavoriteState = GetFavoriteState()
     
     var body: some View {
         NavigationView {
             List {
-
-                if self.getWatchlistState.items.isEmpty {
-                    LoadingView(isLoading: self.getWatchlistState.isLoading, error: self.getWatchlistState.error, fullPage:false) {
-                        self.getWatchlistState.getList()
+               
+                if self.getFavoriteState.items.isEmpty {
+                    LoadingView(isLoading: self.getFavoriteState.isLoading, error: self.getFavoriteState.error , fullPage:false) {
+                        self.getFavoriteState.getList()
                     }
                   
                 }
                 else{
             
-                        ForEach(self.getWatchlistState.items) { movie in
+                        ForEach(self.getFavoriteState.items) { movie in
                             NavigationLink(destination: MovieDetailView(movieId: movie.id)) {
                                 VStack(alignment: .leading) {
                                     HStack(){
@@ -33,20 +33,21 @@ struct WatchlistView: View {
                                 }
                             }
                         }
+                    
                 }
 
             }
-            .navigationBarTitle("Watchlist",displayMode: .inline)
+            .navigationBarTitle("Favorites",displayMode: .inline)
         }
         .onAppear {
-            self.getWatchlistState.getList()
+            self.getFavoriteState.getList()
         }
     }
 }
 
-struct WatchlistView_Previews: PreviewProvider {
+struct FavoritesView_Previews: PreviewProvider {
     static var previews: some View {
-        WatchlistView()
+        FavoritesView()
             .previewDevice("iPhone 13")
     }
 }
