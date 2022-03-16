@@ -10,14 +10,14 @@ import SwiftUI
 struct ContentView: View {
     @State private var email = ""
     @State private var password = ""
-    @State private var showingLoginScreen =  true
+    @ObservedObject var authState = AuthState()
 
     var body: some View {
         NavigationView{
             ZStack {
                 Color.blue
                     .ignoresSafeArea()
-                if(showingLoginScreen){
+                if(!authState.loginSuccess){
                     VStack{
                         Text("The Movie Manager")
                             .font(.largeTitle)
@@ -41,7 +41,7 @@ struct ContentView: View {
                             .background(Color.white)
                             .cornerRadius(10)
                         Button("Login") {
-                            authUser(username: email, password: password)
+                            authUser()
                         }
                         .foregroundColor(.white)
                         .frame(width: 300, height: 50)
@@ -58,10 +58,21 @@ struct ContentView: View {
             }
         }
         .navigationBarHidden(true)
+        .navigationBarTitle("")
     }
-    func authUser(username: String, password: String)
+    
+    func controlForm() -> Bool {
+        if(email != "" && password != "")
+        {
+            return true
+        }
+        return false
+    }
+    func authUser()
     {
-       showingLoginScreen = false
+        if(controlForm()){
+        self.authState.fetchToken(email: self.email, password: self.password)
+        }
     }
 }
 

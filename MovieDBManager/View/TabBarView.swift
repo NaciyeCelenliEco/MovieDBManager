@@ -10,13 +10,12 @@ import SwiftUI
 struct TabBarView: View {
     var body: some View {
         TabView{
-            Text("Home")
+            SearchView()
                     .tabItem{
                         Image(systemName: "house")
                         Text("Search")
                     }
-            
-            Text("Watchlist")
+            WatchlistView()
                 .tabItem{
                     Image(systemName: "gear")
                     Text("Watchlist")
@@ -27,6 +26,8 @@ struct TabBarView: View {
                     Text("Favorites")
                 }
         }
+        .navigationBarTitle("")
+              .navigationBarHidden(true)
     }
 }
 
