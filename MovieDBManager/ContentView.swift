@@ -13,7 +13,6 @@ struct ContentView: View {
     @ObservedObject var authState = AuthState()
 
     var body: some View {
-        NavigationView{
             ZStack {
                 Color.blue
                     .ignoresSafeArea()
@@ -69,9 +68,6 @@ struct ContentView: View {
             .alert(self.authState.error, isPresented:$authState.showAlert ) {
                 Button("OK", role: .cancel) { }
             }
-        }
-        .navigationBarHidden(true)
-        .navigationBarTitle("")
     }
     
     func controlForm() -> Bool {
