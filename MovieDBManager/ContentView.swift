@@ -18,20 +18,25 @@ struct ContentView: View {
                 Color.blue
                     .ignoresSafeArea()
                 if(!authState.loginSuccess){
-                    if(authState.isLoading){
-                        LoadingView(isLoading: self.authState.isLoading, error: self.authState.error, fullPage:true) {
-                        }
-                    }
-               
+                   
                     VStack{
+                        Image("camera")
+                            .resizable()
+                            .frame(width: 120, height: 120, alignment: .center)
+                            
                         Text("The Movie Manager")
-                            .font(.largeTitle)
+                            .font(.title)
                             .foregroundColor(Color.white)
                             .bold()
                             .padding()
                         Spacer()
+                        if(authState.isLoading){
+                            LoadingView(isLoading: self.authState.isLoading, error: self.authState.error, dark:false) {
+                            }
+                        }
+                   
                         Text("Login with Email")
-                            .font(.title)
+                            .font(.headline)
                             .foregroundColor(Color.white)
                             .bold()
                             .padding()
@@ -54,7 +59,6 @@ struct ContentView: View {
                         .cornerRadius(10)
                         Spacer()
                     }
-                    
 
                 }
             

@@ -11,28 +11,19 @@ struct LoadingView: View {
     
     let isLoading: Bool
     let error: String
-    let fullPage : Bool
+    let dark : Bool
     let retryAction: (() -> ())?
 
     
     var body: some View {
         Group {
             if isLoading {
-                if(fullPage){
-                HStack {
-                    Spacer()
-                    ActivityIndicatorView()
-                    Spacer()
-                }.padding(.top,-200)
-
-            }
-                else{
                     HStack {
                         Spacer()
-                        ActivityIndicatorView()
+                        ActivityIndicatorView(kind:dark)
                         Spacer()
                     }
-                }
+                
             } else if error != "" {
                 HStack {
                     Spacer()
@@ -56,6 +47,6 @@ struct LoadingView: View {
 
 struct LoadingView_Previews: PreviewProvider {
     static var previews: some View {
-        LoadingView(isLoading: true, error: "", fullPage: false, retryAction: nil)
+        LoadingView(isLoading: true, error: "", dark: false, retryAction: nil)
     }
 }

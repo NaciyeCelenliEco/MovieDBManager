@@ -15,7 +15,7 @@ struct FavoritesView: View {
             List {
                
                 if self.getFavoriteState.items.isEmpty {
-                    LoadingView(isLoading: self.getFavoriteState.isLoading, error: self.getFavoriteState.error , fullPage:false) {
+                    LoadingView(isLoading: self.getFavoriteState.isLoading, error: self.getFavoriteState.error , dark:true) {
                         self.getFavoriteState.getList()
                     }
                   
@@ -23,7 +23,7 @@ struct FavoritesView: View {
                 else{
             
                         ForEach(self.getFavoriteState.items) { movie in
-                            NavigationLink(destination: MovieDetailView(movieId: movie.id)) {
+                            NavigationLink(destination: MovieDetailView(movieId: movie.id, searchDetail: false)) {
                                 VStack(alignment: .leading) {
                                     HStack(){
                                         MovieCellImage(imageLoader: ImageLoader(), imageURL: URL(string: String(format: "%@%@", "https://image.tmdb.org/t/p/w500/",movie.posterPath))!)

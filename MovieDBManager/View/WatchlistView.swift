@@ -15,7 +15,7 @@ struct WatchlistView: View {
             List {
 
                 if self.getWatchlistState.items.isEmpty {
-                    LoadingView(isLoading: self.getWatchlistState.isLoading, error: self.getWatchlistState.error, fullPage:false) {
+                    LoadingView(isLoading: self.getWatchlistState.isLoading, error: self.getWatchlistState.error, dark:true) {
                         self.getWatchlistState.getList()
                     }
                   
@@ -23,7 +23,7 @@ struct WatchlistView: View {
                 else{
             
                         ForEach(self.getWatchlistState.items) { movie in
-                            NavigationLink(destination: MovieDetailView(movieId: movie.id)) {
+                            NavigationLink(destination: MovieDetailView(movieId: movie.id, searchDetail: false)) {
                                 VStack(alignment: .leading) {
                                     HStack(){
                                         MovieCellImage(imageLoader: ImageLoader(), imageURL: URL(string: String(format: "%@%@", "https://image.tmdb.org/t/p/w500/",movie.posterPath))!)

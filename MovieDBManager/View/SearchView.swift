@@ -17,13 +17,13 @@ struct SearchView: View {
                     .listRowInsets(EdgeInsets(top: 0, leading: 8, bottom: 0, trailing: 8))
 
 
-                LoadingView(isLoading: self.movieSearchState.isLoading, error: self.movieSearchState.error, fullPage:false) {
+                LoadingView(isLoading: self.movieSearchState.isLoading, error: self.movieSearchState.error, dark:true) {
                     self.movieSearchState.search(query: self.movieSearchState.query)
                 }
 
                 if !self.movieSearchState.movies.isEmpty {
                     ForEach(self.movieSearchState.movies) { movie in
-                        NavigationLink(destination: MovieDetailView(movieId: movie.id)) {
+                        NavigationLink(destination: MovieDetailView(movieId: movie.id, searchDetail: true)) {
                             VStack(alignment: .leading) {
                                 Text(movie.title)
                             }

@@ -12,8 +12,9 @@ import Foundation
 class AddWatchlistState: ObservableObject {
     
     @Published var isLoading = false
-    @Published var error: String = ""
+    @Published var message: String = ""
     @Published var addSuccess : Bool = false
+    @Published var showAlert : Bool = false
     
     init() {
         
@@ -32,11 +33,14 @@ class AddWatchlistState: ObservableObject {
             self.isLoading = true
             if error != nil {
                 
-                //error
+                self.message = "Adding movie to watchlist failed"
+                self.showAlert = true
                 
             }else {
+                self.message = "Movie added to watchlist"
                 self.addSuccess = true
-                
+                self.showAlert = true
+
             }
         }
     }

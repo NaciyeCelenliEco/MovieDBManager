@@ -55,7 +55,10 @@ struct Service {
         case getFavorites(accountId:Int, sessionId:String)
 
         public var url: String {
-            return String(format: "%@%@", Service.BASE_URL,relativeURLString)
+            
+            let urlString =  String(format: "%@%@", Service.BASE_URL,relativeURLString).addingPercentEncoding(withAllowedCharacters: CharacterSet.urlQueryAllowed) ?? String(format: "%@%@", Service.BASE_URL,relativeURLString)
+            
+            return urlString
 
         }
         

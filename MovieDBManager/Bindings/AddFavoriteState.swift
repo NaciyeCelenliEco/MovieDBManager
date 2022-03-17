@@ -12,8 +12,9 @@ import Foundation
 class AddFavoriteState: ObservableObject {
     
     @Published var isLoading = false
-    @Published var error: String = ""
+    @Published var message: String = ""
     @Published var addSuccess : Bool = false
+    @Published var showAlert : Bool = false
     
     init() {
         
@@ -32,11 +33,13 @@ class AddFavoriteState: ObservableObject {
             self.isLoading = true
             if error != nil {
                 
-                //error
-                
-            }else {
+                self.message = "Adding movie to favorites failed"
+                self.showAlert = true
+            }
+            else {
+                self.message = "Movie added to favorites"
                 self.addSuccess = true
-                
+                self.showAlert = true
             }
         }
     }
