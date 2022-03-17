@@ -1,0 +1,12 @@
+{
+  "source": "/Users/ncelenli/Documents/MovieDBManager/MovieDBManager/View/FavoritesView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Favorites"
+      }
+    ]
+  },
+  "version": 1
+}

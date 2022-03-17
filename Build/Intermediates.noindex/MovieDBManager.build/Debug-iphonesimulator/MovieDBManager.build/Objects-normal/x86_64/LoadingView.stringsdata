@@ -1,0 +1,12 @@
+{
+  "source": "/Users/ncelenli/Documents/MovieDBManager/MovieDBManager/View/LoadingView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Retry"
+      }
+    ]
+  },
+  "version": 1
+}

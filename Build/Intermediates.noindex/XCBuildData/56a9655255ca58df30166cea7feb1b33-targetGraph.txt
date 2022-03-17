@@ -1,0 +1,15 @@
+Target dependency graph (5 targets)
+Alamofire in Pods, no dependencies
+ObjectMapper in Pods, no dependencies
+AlamofireObjectMapper in Pods, depends on:
+Alamofire in Pods (explicit)
+ObjectMapper in Pods (explicit)
+Pods-MovieDBManager in Pods, depends on:
+Alamofire in Pods (explicit)
+AlamofireObjectMapper in Pods (explicit)
+ObjectMapper in Pods (explicit)
+MovieDBManager in MovieDBManager, depends on:
+Pods-MovieDBManager in Pods (implicit dependency via file 'Pods_MovieDBManager.framework' in build phase 'Link Binary')
+Alamofire in Pods (implicit dependency via options '-framework Alamofire' in build setting 'OTHER_LDFLAGS')
+AlamofireObjectMapper in Pods (implicit dependency via options '-framework AlamofireObjectMapper' in build setting 'OTHER_LDFLAGS')
+ObjectMapper in Pods (implicit dependency via options '-framework ObjectMapper' in build setting 'OTHER_LDFLAGS')

@@ -1,0 +1,24 @@
+{
+  "source": "/Users/ncelenli/Documents/MovieDBManager/MovieDBManager/View/TabBarView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": ""
+      },
+      {
+        "comment": "",
+        "key": "Search"
+      },
+      {
+        "comment": "",
+        "key": "Watchlist"
+      },
+      {
+        "comment": "",
+        "key": "Favorites"
+      }
+    ]
+  },
+  "version": 1
+}

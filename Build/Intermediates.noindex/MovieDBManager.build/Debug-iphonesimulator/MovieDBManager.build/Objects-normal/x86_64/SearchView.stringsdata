@@ -1,0 +1,12 @@
+{
+  "source": "/Users/ncelenli/Documents/MovieDBManager/MovieDBManager/View/SearchView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Search"
+      }
+    ]
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "source": "/Users/ncelenli/Documents/MovieDBManager/MovieDBManager/ContentView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "The Movie Manager"
+      },
+      {
+        "comment": "",
+        "key": "Login with Email"
+      },
+      {
+        "comment": "",
+        "key": "Email"
+      },
+      {
+        "comment": "",
+        "key": "Password"
+      },
+      {
+        "comment": "",
+        "key": "Login"
+      },
+      {
+        "comment": "",
+        "key": "OK"
+      }
+    ]
+  },
+  "version": 1
+}

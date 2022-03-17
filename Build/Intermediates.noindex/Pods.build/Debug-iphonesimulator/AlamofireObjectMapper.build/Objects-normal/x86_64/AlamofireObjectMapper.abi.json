@@ -1,0 +1,2926 @@
+{
+  "kind": "Root",
+  "name": "TopLevel",
+  "printedName": "TopLevel",
+  "children": [
+    {
+      "kind": "Import",
+      "name": "Alamofire",
+      "printedName": "Alamofire",
+      "declKind": "Import",
+      "moduleName": "AlamofireObjectMapper"
+    },
+    {
+      "kind": "Import",
+      "name": "AlamofireObjectMapper",
+      "printedName": "AlamofireObjectMapper",
+      "declKind": "Import",
+      "moduleName": "AlamofireObjectMapper",
+      "declAttributes": [
+        "Exported"
+      ]
+    },
+    {
+      "kind": "Import",
+      "name": "Foundation",
+      "printedName": "Foundation",
+      "declKind": "Import",
+      "moduleName": "AlamofireObjectMapper"
+    },
+    {
+      "kind": "Import",
+      "name": "ObjectMapper",
+      "printedName": "ObjectMapper",
+      "declKind": "Import",
+      "moduleName": "AlamofireObjectMapper"
+    },
+    {
+      "kind": "Import",
+      "name": "SwiftOnoneSupport",
+      "printedName": "SwiftOnoneSupport",
+      "declKind": "Import",
+      "moduleName": "AlamofireObjectMapper"
+    },
+    {
+      "kind": "Import",
+      "name": "_Concurrency",
+      "printedName": "_Concurrency",
+      "declKind": "Import",
+      "moduleName": "AlamofireObjectMapper"
+    },
+    {
+      "kind": "TypeDecl",
+      "name": "MappableResponseSerializer",
+      "printedName": "MappableResponseSerializer",
+      "children": [
+        {
+          "kind": "Var",
+          "name": "decoder",
+          "printedName": "decoder",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "DataDecoder",
+              "printedName": "Alamofire.DataDecoder",
+              "usr": "s:9Alamofire11DataDecoderP"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:21AlamofireObjectMapper26MappableResponseSerializerC7decoder0A011DataDecoder_pvp",
+          "mangledName": "$s21AlamofireObjectMapper26MappableResponseSerializerC7decoder0A011DataDecoder_pvp",
+          "moduleName": "AlamofireObjectMapper",
+          "declAttributes": [
+            "HasInitialValue",
+            "Final",
+            "HasStorage"
+          ],
+          "fixedbinaryorder": 0,
+          "isLet": true,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "DataDecoder",
+                  "printedName": "Alamofire.DataDecoder",
+                  "usr": "s:9Alamofire11DataDecoderP"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:21AlamofireObjectMapper26MappableResponseSerializerC7decoder0A011DataDecoder_pvg",
+              "mangledName": "$s21AlamofireObjectMapper26MappableResponseSerializerC7decoder0A011DataDecoder_pvg",
+              "moduleName": "AlamofireObjectMapper",
+              "genericSig": "<τ_0_0 where τ_0_0 : ObjectMapper.BaseMappable>",
+              "sugared_genericSig": "<T where T : ObjectMapper.BaseMappable>",
+              "implicit": true,
+              "declAttributes": [
+                "Transparent",
+                "Final"
+              ],
+              "accessorKind": "get"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "emptyResponseCodes",
+          "printedName": "emptyResponseCodes",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Set",
+              "printedName": "Swift.Set<Swift.Int>",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Int",
+                  "printedName": "Swift.Int",
+                  "usr": "s:Si"
+                }
+              ],
+              "usr": "s:Sh"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:21AlamofireObjectMapper26MappableResponseSerializerC05emptyE5CodesShySiGvp",
+          "mangledName": "$s21AlamofireObjectMapper26MappableResponseSerializerC05emptyE5CodesShySiGvp",
+          "moduleName": "AlamofireObjectMapper",
+          "declAttributes": [
+            "Final",
+            "HasStorage"
+          ],
+          "fixedbinaryorder": 1,
+          "isLet": true,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Set",
+                  "printedName": "Swift.Set<Swift.Int>",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "Int",
+                      "printedName": "Swift.Int",
+                      "usr": "s:Si"
+                    }
+                  ],
+                  "usr": "s:Sh"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:21AlamofireObjectMapper26MappableResponseSerializerC05emptyE5CodesShySiGvg",
+              "mangledName": "$s21AlamofireObjectMapper26MappableResponseSerializerC05emptyE5CodesShySiGvg",
+              "moduleName": "AlamofireObjectMapper",
+              "genericSig": "<τ_0_0 where τ_0_0 : ObjectMapper.BaseMappable>",
+              "sugared_genericSig": "<T where T : ObjectMapper.BaseMappable>",
+              "implicit": true,
+              "declAttributes": [
+                "Transparent",
+                "Final"
+              ],
+              "accessorKind": "get"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "emptyRequestMethods",
+          "printedName": "emptyRequestMethods",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Set",
+              "printedName": "Swift.Set<Alamofire.HTTPMethod>",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "HTTPMethod",
+                  "printedName": "Alamofire.HTTPMethod",
+                  "usr": "s:9Alamofire10HTTPMethodV"
+                }
+              ],
+              "usr": "s:Sh"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:21AlamofireObjectMapper26MappableResponseSerializerC19emptyRequestMethodsShy0A010HTTPMethodVGvp",
+          "mangledName": "$s21AlamofireObjectMapper26MappableResponseSerializerC19emptyRequestMethodsShy0A010HTTPMethodVGvp",
+          "moduleName": "AlamofireObjectMapper",
+          "declAttributes": [
+            "Final",
+            "HasStorage"
+          ],
+          "fixedbinaryorder": 2,
+          "isLet": true,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Set",
+                  "printedName": "Swift.Set<Alamofire.HTTPMethod>",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "HTTPMethod",
+                      "printedName": "Alamofire.HTTPMethod",
+                      "usr": "s:9Alamofire10HTTPMethodV"
+                    }
+                  ],
+                  "usr": "s:Sh"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:21AlamofireObjectMapper26MappableResponseSerializerC19emptyRequestMethodsShy0A010HTTPMethodVGvg",
+              "mangledName": "$s21AlamofireObjectMapper26MappableResponseSerializerC19emptyRequestMethodsShy0A010HTTPMethodVGvg",
+              "moduleName": "AlamofireObjectMapper",
+              "genericSig": "<τ_0_0 where τ_0_0 : ObjectMapper.BaseMappable>",
+              "sugared_genericSig": "<T where T : ObjectMapper.BaseMappable>",
+              "implicit": true,
+              "declAttributes": [
+                "Transparent",
+                "Final"
+              ],
+              "accessorKind": "get"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "keyPath",
+          "printedName": "keyPath",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "Swift.String?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "String",
+                  "printedName": "Swift.String",
+                  "usr": "s:SS"
+                }
+              ],
+              "usr": "s:Sq"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:21AlamofireObjectMapper26MappableResponseSerializerC7keyPathSSSgvp",
+          "mangledName": "$s21AlamofireObjectMapper26MappableResponseSerializerC7keyPathSSSgvp",
+          "moduleName": "AlamofireObjectMapper",
+          "declAttributes": [
+            "Final",
+            "HasStorage"
+          ],
+          "fixedbinaryorder": 3,
+          "isLet": true,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Optional",
+                  "printedName": "Swift.String?",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "String",
+                      "printedName": "Swift.String",
+                      "usr": "s:SS"
+                    }
+                  ],
+                  "usr": "s:Sq"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:21AlamofireObjectMapper26MappableResponseSerializerC7keyPathSSSgvg",
+              "mangledName": "$s21AlamofireObjectMapper26MappableResponseSerializerC7keyPathSSSgvg",
+              "moduleName": "AlamofireObjectMapper",
+              "genericSig": "<τ_0_0 where τ_0_0 : ObjectMapper.BaseMappable>",
+              "sugared_genericSig": "<T where T : ObjectMapper.BaseMappable>",
+              "implicit": true,
+              "declAttributes": [
+                "Transparent",
+                "Final"
+              ],
+              "accessorKind": "get"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "context",
+          "printedName": "context",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "ObjectMapper.MapContext?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "MapContext",
+                  "printedName": "ObjectMapper.MapContext",
+                  "usr": "s:12ObjectMapper10MapContextP"
+                }
+              ],
+              "usr": "s:Sq"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:21AlamofireObjectMapper26MappableResponseSerializerC7context0bC010MapContext_pSgvp",
+          "mangledName": "$s21AlamofireObjectMapper26MappableResponseSerializerC7context0bC010MapContext_pSgvp",
+          "moduleName": "AlamofireObjectMapper",
+          "declAttributes": [
+            "Final",
+            "HasStorage"
+          ],
+          "fixedbinaryorder": 4,
+          "isLet": true,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Optional",
+                  "printedName": "ObjectMapper.MapContext?",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "MapContext",
+                      "printedName": "ObjectMapper.MapContext",
+                      "usr": "s:12ObjectMapper10MapContextP"
+                    }
+                  ],
+                  "usr": "s:Sq"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:21AlamofireObjectMapper26MappableResponseSerializerC7context0bC010MapContext_pSgvg",
+              "mangledName": "$s21AlamofireObjectMapper26MappableResponseSerializerC7context0bC010MapContext_pSgvg",
+              "moduleName": "AlamofireObjectMapper",
+              "genericSig": "<τ_0_0 where τ_0_0 : ObjectMapper.BaseMappable>",
+              "sugared_genericSig": "<T where T : ObjectMapper.BaseMappable>",
+              "implicit": true,
+              "declAttributes": [
+                "Transparent",
+                "Final"
+              ],
+              "accessorKind": "get"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "object",
+          "printedName": "object",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "τ_0_0?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "GenericTypeParam",
+                  "printedName": "τ_0_0"
+                }
+              ],
+              "usr": "s:Sq"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:21AlamofireObjectMapper26MappableResponseSerializerC6objectxSgvp",
+          "mangledName": "$s21AlamofireObjectMapper26MappableResponseSerializerC6objectxSgvp",
+          "moduleName": "AlamofireObjectMapper",
+          "declAttributes": [
+            "Final",
+            "HasStorage"
+          ],
+          "fixedbinaryorder": 5,
+          "isLet": true,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Optional",
+                  "printedName": "τ_0_0?",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "GenericTypeParam",
+                      "printedName": "τ_0_0"
+                    }
+                  ],
+                  "usr": "s:Sq"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:21AlamofireObjectMapper26MappableResponseSerializerC6objectxSgvg",
+              "mangledName": "$s21AlamofireObjectMapper26MappableResponseSerializerC6objectxSgvg",
+              "moduleName": "AlamofireObjectMapper",
+              "genericSig": "<τ_0_0 where τ_0_0 : ObjectMapper.BaseMappable>",
+              "sugared_genericSig": "<T where T : ObjectMapper.BaseMappable>",
+              "implicit": true,
+              "declAttributes": [
+                "Transparent",
+                "Final"
+              ],
+              "accessorKind": "get"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "serializeCallback",
+          "printedName": "serializeCallback",
+          "children": [
+            {
+              "kind": "TypeFunc",
+              "name": "Function",
+              "printedName": "(Foundation.URLRequest?, Foundation.HTTPURLResponse?, Foundation.Data?, Swift.Error?) throws -> τ_0_0",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "GenericTypeParam",
+                  "printedName": "τ_0_0"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "Tuple",
+                  "printedName": "(Foundation.URLRequest?, Foundation.HTTPURLResponse?, Foundation.Data?, Swift.Error?)",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "Optional",
+                      "printedName": "Foundation.URLRequest?",
+                      "children": [
+                        {
+                          "kind": "TypeNominal",
+                          "name": "URLRequest",
+                          "printedName": "Foundation.URLRequest",
+                          "usr": "s:10Foundation10URLRequestV"
+                        }
+                      ],
+                      "usr": "s:Sq"
+                    },
+                    {
+                      "kind": "TypeNominal",
+                      "name": "Optional",
+                      "printedName": "Foundation.HTTPURLResponse?",
+                      "children": [
+                        {
+                          "kind": "TypeNominal",
+                          "name": "HTTPURLResponse",
+                          "printedName": "Foundation.HTTPURLResponse",
+                          "usr": "c:objc(cs)NSHTTPURLResponse"
+                        }
+                      ],
+                      "usr": "s:Sq"
+                    },
+                    {
+                      "kind": "TypeNominal",
+                      "name": "Optional",
+                      "printedName": "Foundation.Data?",
+                      "children": [
+                        {
+                          "kind": "TypeNominal",
+                          "name": "Data",
+                          "printedName": "Foundation.Data",
+                          "usr": "s:10Foundation4DataV"
+                        }
+                      ],
+                      "usr": "s:Sq"
+                    },
+                    {
+                      "kind": "TypeNominal",
+                      "name": "Optional",
+                      "printedName": "Swift.Error?",
+                      "children": [
+                        {
+                          "kind": "TypeNominal",
+                          "name": "Error",
+                          "printedName": "Swift.Error",
+                          "usr": "s:s5ErrorP"
+                        }
+                      ],
+                      "usr": "s:Sq"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:21AlamofireObjectMapper26MappableResponseSerializerC17serializeCallbackyx10Foundation10URLRequestVSg_So17NSHTTPURLResponseCSgAE4DataVSgs5Error_pSgtKcvp",
+          "mangledName": "$s21AlamofireObjectMapper26MappableResponseSerializerC17serializeCallbackyx10Foundation10URLRequestVSg_So17NSHTTPURLResponseCSgAE4DataVSgs5Error_pSgtKcvp",
+          "moduleName": "AlamofireObjectMapper",
+          "declAttributes": [
+            "Final",
+            "HasStorage"
+          ],
+          "fixedbinaryorder": 6,
+          "isLet": true,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeFunc",
+                  "name": "Function",
+                  "printedName": "(Foundation.URLRequest?, Foundation.HTTPURLResponse?, Foundation.Data?, Swift.Error?) throws -> τ_0_0",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "GenericTypeParam",
+                      "printedName": "τ_0_0"
+                    },
+                    {
+                      "kind": "TypeNominal",
+                      "name": "Tuple",
+                      "printedName": "(Foundation.URLRequest?, Foundation.HTTPURLResponse?, Foundation.Data?, Swift.Error?)",
+                      "children": [
+                        {
+                          "kind": "TypeNominal",
+                          "name": "Optional",
+                          "printedName": "Foundation.URLRequest?",
+                          "children": [
+                            {
+                              "kind": "TypeNominal",
+                              "name": "URLRequest",
+                              "printedName": "Foundation.URLRequest",
+                              "usr": "s:10Foundation10URLRequestV"
+                            }
+                          ],
+                          "usr": "s:Sq"
+                        },
+                        {
+                          "kind": "TypeNominal",
+                          "name": "Optional",
+                          "printedName": "Foundation.HTTPURLResponse?",
+                          "children": [
+                            {
+                              "kind": "TypeNominal",
+                              "name": "HTTPURLResponse",
+                              "printedName": "Foundation.HTTPURLResponse",
+                              "usr": "c:objc(cs)NSHTTPURLResponse"
+                            }
+                          ],
+                          "usr": "s:Sq"
+                        },
+                        {
+                          "kind": "TypeNominal",
+                          "name": "Optional",
+                          "printedName": "Foundation.Data?",
+                          "children": [
+                            {
+                              "kind": "TypeNominal",
+                              "name": "Data",
+                              "printedName": "Foundation.Data",
+                              "usr": "s:10Foundation4DataV"
+                            }
+                          ],
+                          "usr": "s:Sq"
+                        },
+                        {
+                          "kind": "TypeNominal",
+                          "name": "Optional",
+                          "printedName": "Swift.Error?",
+                          "children": [
+                            {
+                              "kind": "TypeNominal",
+                              "name": "Error",
+                              "printedName": "Swift.Error",
+                              "usr": "s:s5ErrorP"
+                            }
+                          ],
+                          "usr": "s:Sq"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:21AlamofireObjectMapper26MappableResponseSerializerC17serializeCallbackyx10Foundation10URLRequestVSg_So17NSHTTPURLResponseCSgAE4DataVSgs5Error_pSgtKcvg",
+              "mangledName": "$s21AlamofireObjectMapper26MappableResponseSerializerC17serializeCallbackyx10Foundation10URLRequestVSg_So17NSHTTPURLResponseCSgAE4DataVSgs5Error_pSgtKcvg",
+              "moduleName": "AlamofireObjectMapper",
+              "genericSig": "<τ_0_0 where τ_0_0 : ObjectMapper.BaseMappable>",
+              "sugared_genericSig": "<T where T : ObjectMapper.BaseMappable>",
+              "implicit": true,
+              "declAttributes": [
+                "Transparent",
+                "Final"
+              ],
+              "accessorKind": "get"
+            }
+          ]
+        },
+        {
+          "kind": "Constructor",
+          "name": "init",
+          "printedName": "init(_:mapToObject:context:emptyResponseCodes:emptyRequestMethods:serializeCallback:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "MappableResponseSerializer",
+              "printedName": "AlamofireObjectMapper.MappableResponseSerializer<τ_0_0>",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "GenericTypeParam",
+                  "printedName": "τ_0_0"
+                }
+              ],
+              "usr": "s:21AlamofireObjectMapper26MappableResponseSerializerC"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "Swift.String?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "String",
+                  "printedName": "Swift.String",
+                  "usr": "s:SS"
+                }
+              ],
+              "usr": "s:Sq"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "τ_0_0?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "GenericTypeParam",
+                  "printedName": "τ_0_0"
+                }
+              ],
+              "hasDefaultArg": true,
+              "usr": "s:Sq"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "ObjectMapper.MapContext?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "MapContext",
+                  "printedName": "ObjectMapper.MapContext",
+                  "usr": "s:12ObjectMapper10MapContextP"
+                }
+              ],
+              "hasDefaultArg": true,
+              "usr": "s:Sq"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Set",
+              "printedName": "Swift.Set<Swift.Int>",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Int",
+                  "printedName": "Swift.Int",
+                  "usr": "s:Si"
+                }
+              ],
+              "hasDefaultArg": true,
+              "usr": "s:Sh"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Set",
+              "printedName": "Swift.Set<Alamofire.HTTPMethod>",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "HTTPMethod",
+                  "printedName": "Alamofire.HTTPMethod",
+                  "usr": "s:9Alamofire10HTTPMethodV"
+                }
+              ],
+              "hasDefaultArg": true,
+              "usr": "s:Sh"
+            },
+            {
+              "kind": "TypeFunc",
+              "name": "Function",
+              "printedName": "(Foundation.URLRequest?, Foundation.HTTPURLResponse?, Foundation.Data?, Swift.Error?) throws -> τ_0_0",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "GenericTypeParam",
+                  "printedName": "τ_0_0"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "Tuple",
+                  "printedName": "(Foundation.URLRequest?, Foundation.HTTPURLResponse?, Foundation.Data?, Swift.Error?)",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "Optional",
+                      "printedName": "Foundation.URLRequest?",
+                      "children": [
+                        {
+                          "kind": "TypeNominal",
+                          "name": "URLRequest",
+                          "printedName": "Foundation.URLRequest",
+                          "usr": "s:10Foundation10URLRequestV"
+                        }
+                      ],
+                      "usr": "s:Sq"
+                    },
+                    {
+                      "kind": "TypeNominal",
+                      "name": "Optional",
+                      "printedName": "Foundation.HTTPURLResponse?",
+                      "children": [
+                        {
+                          "kind": "TypeNominal",
+                          "name": "HTTPURLResponse",
+                          "printedName": "Foundation.HTTPURLResponse",
+                          "usr": "c:objc(cs)NSHTTPURLResponse"
+                        }
+                      ],
+                      "usr": "s:Sq"
+                    },
+                    {
+                      "kind": "TypeNominal",
+                      "name": "Optional",
+                      "printedName": "Foundation.Data?",
+                      "children": [
+                        {
+                          "kind": "TypeNominal",
+                          "name": "Data",
+                          "printedName": "Foundation.Data",
+                          "usr": "s:10Foundation4DataV"
+                        }
+                      ],
+                      "usr": "s:Sq"
+                    },
+                    {
+                      "kind": "TypeNominal",
+                      "name": "Optional",
+                      "printedName": "Swift.Error?",
+                      "children": [
+                        {
+                          "kind": "TypeNominal",
+                          "name": "Error",
+                          "printedName": "Swift.Error",
+                          "usr": "s:s5ErrorP"
+                        }
+                      ],
+                      "usr": "s:Sq"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "declKind": "Constructor",
+          "usr": "s:21AlamofireObjectMapper26MappableResponseSerializerC_05mapToB07context05emptyE5Codes0J14RequestMethods17serializeCallbackACyxGSSSg_xSg0bC010MapContext_pSgShySiGShy0A010HTTPMethodVGx10Foundation10URLRequestVSg_So17NSHTTPURLResponseCSgAT4DataVSgs5Error_pSgtKctcfc",
+          "mangledName": "$s21AlamofireObjectMapper26MappableResponseSerializerC_05mapToB07context05emptyE5Codes0J14RequestMethods17serializeCallbackACyxGSSSg_xSg0bC010MapContext_pSgShySiGShy0A010HTTPMethodVGx10Foundation10URLRequestVSg_So17NSHTTPURLResponseCSgAT4DataVSgs5Error_pSgtKctcfc",
+          "moduleName": "AlamofireObjectMapper",
+          "genericSig": "<τ_0_0 where τ_0_0 : ObjectMapper.BaseMappable>",
+          "sugared_genericSig": "<T where T : ObjectMapper.BaseMappable>",
+          "init_kind": "Designated"
+        },
+        {
+          "kind": "Function",
+          "name": "serialize",
+          "printedName": "serialize(request:response:data:error:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "GenericTypeParam",
+              "printedName": "τ_0_0"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "Foundation.URLRequest?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "URLRequest",
+                  "printedName": "Foundation.URLRequest",
+                  "usr": "s:10Foundation10URLRequestV"
+                }
+              ],
+              "usr": "s:Sq"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "Foundation.HTTPURLResponse?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "HTTPURLResponse",
+                  "printedName": "Foundation.HTTPURLResponse",
+                  "usr": "c:objc(cs)NSHTTPURLResponse"
+                }
+              ],
+              "usr": "s:Sq"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "Foundation.Data?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Data",
+                  "printedName": "Foundation.Data",
+                  "usr": "s:10Foundation4DataV"
+                }
+              ],
+              "usr": "s:Sq"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "Swift.Error?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Error",
+                  "printedName": "Swift.Error",
+                  "usr": "s:s5ErrorP"
+                }
+              ],
+              "usr": "s:Sq"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:21AlamofireObjectMapper26MappableResponseSerializerC9serialize7request8response4data5errorx10Foundation10URLRequestVSg_So17NSHTTPURLResponseCSgAI4DataVSgs5Error_pSgtKF",
+          "mangledName": "$s21AlamofireObjectMapper26MappableResponseSerializerC9serialize7request8response4data5errorx10Foundation10URLRequestVSg_So17NSHTTPURLResponseCSgAI4DataVSgs5Error_pSgtKF",
+          "moduleName": "AlamofireObjectMapper",
+          "genericSig": "<τ_0_0 where τ_0_0 : ObjectMapper.BaseMappable>",
+          "sugared_genericSig": "<T where T : ObjectMapper.BaseMappable>",
+          "declAttributes": [
+            "Final"
+          ],
+          "throwing": true,
+          "funcSelfKind": "NonMutating"
+        }
+      ],
+      "declKind": "Class",
+      "usr": "s:21AlamofireObjectMapper26MappableResponseSerializerC",
+      "mangledName": "$s21AlamofireObjectMapper26MappableResponseSerializerC",
+      "moduleName": "AlamofireObjectMapper",
+      "genericSig": "<τ_0_0 where τ_0_0 : ObjectMapper.BaseMappable>",
+      "sugared_genericSig": "<T where T : ObjectMapper.BaseMappable>",
+      "declAttributes": [
+        "Final"
+      ],
+      "conformances": [
+        {
+          "kind": "Conformance",
+          "name": "ResponseSerializer",
+          "printedName": "ResponseSerializer",
+          "usr": "s:9Alamofire18ResponseSerializerP",
+          "mangledName": "$s9Alamofire18ResponseSerializerP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "DownloadResponseSerializerProtocol",
+          "printedName": "DownloadResponseSerializerProtocol",
+          "children": [
+            {
+              "kind": "TypeWitness",
+              "name": "SerializedObject",
+              "printedName": "SerializedObject",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "GenericTypeParam",
+                  "printedName": "τ_0_0"
+                }
+              ]
+            }
+          ],
+          "usr": "s:9Alamofire34DownloadResponseSerializerProtocolP",
+          "mangledName": "$s9Alamofire34DownloadResponseSerializerProtocolP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "DataResponseSerializerProtocol",
+          "printedName": "DataResponseSerializerProtocol",
+          "children": [
+            {
+              "kind": "TypeWitness",
+              "name": "SerializedObject",
+              "printedName": "SerializedObject",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "GenericTypeParam",
+                  "printedName": "τ_0_0"
+                }
+              ]
+            }
+          ],
+          "usr": "s:9Alamofire30DataResponseSerializerProtocolP",
+          "mangledName": "$s9Alamofire30DataResponseSerializerProtocolP"
+        }
+      ]
+    },
+    {
+      "kind": "TypeDecl",
+      "name": "MappableArrayResponseSerializer",
+      "printedName": "MappableArrayResponseSerializer",
+      "children": [
+        {
+          "kind": "Var",
+          "name": "decoder",
+          "printedName": "decoder",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "DataDecoder",
+              "printedName": "Alamofire.DataDecoder",
+              "usr": "s:9Alamofire11DataDecoderP"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:21AlamofireObjectMapper31MappableArrayResponseSerializerC7decoder0A011DataDecoder_pvp",
+          "mangledName": "$s21AlamofireObjectMapper31MappableArrayResponseSerializerC7decoder0A011DataDecoder_pvp",
+          "moduleName": "AlamofireObjectMapper",
+          "declAttributes": [
+            "HasInitialValue",
+            "Final",
+            "HasStorage"
+          ],
+          "fixedbinaryorder": 0,
+          "isLet": true,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "DataDecoder",
+                  "printedName": "Alamofire.DataDecoder",
+                  "usr": "s:9Alamofire11DataDecoderP"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:21AlamofireObjectMapper31MappableArrayResponseSerializerC7decoder0A011DataDecoder_pvg",
+              "mangledName": "$s21AlamofireObjectMapper31MappableArrayResponseSerializerC7decoder0A011DataDecoder_pvg",
+              "moduleName": "AlamofireObjectMapper",
+              "genericSig": "<τ_0_0 where τ_0_0 : ObjectMapper.BaseMappable>",
+              "sugared_genericSig": "<T where T : ObjectMapper.BaseMappable>",
+              "implicit": true,
+              "declAttributes": [
+                "Transparent",
+                "Final"
+              ],
+              "accessorKind": "get"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "emptyResponseCodes",
+          "printedName": "emptyResponseCodes",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Set",
+              "printedName": "Swift.Set<Swift.Int>",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Int",
+                  "printedName": "Swift.Int",
+                  "usr": "s:Si"
+                }
+              ],
+              "usr": "s:Sh"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:21AlamofireObjectMapper31MappableArrayResponseSerializerC05emptyF5CodesShySiGvp",
+          "mangledName": "$s21AlamofireObjectMapper31MappableArrayResponseSerializerC05emptyF5CodesShySiGvp",
+          "moduleName": "AlamofireObjectMapper",
+          "declAttributes": [
+            "Final",
+            "HasStorage"
+          ],
+          "fixedbinaryorder": 1,
+          "isLet": true,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Set",
+                  "printedName": "Swift.Set<Swift.Int>",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "Int",
+                      "printedName": "Swift.Int",
+                      "usr": "s:Si"
+                    }
+                  ],
+                  "usr": "s:Sh"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:21AlamofireObjectMapper31MappableArrayResponseSerializerC05emptyF5CodesShySiGvg",
+              "mangledName": "$s21AlamofireObjectMapper31MappableArrayResponseSerializerC05emptyF5CodesShySiGvg",
+              "moduleName": "AlamofireObjectMapper",
+              "genericSig": "<τ_0_0 where τ_0_0 : ObjectMapper.BaseMappable>",
+              "sugared_genericSig": "<T where T : ObjectMapper.BaseMappable>",
+              "implicit": true,
+              "declAttributes": [
+                "Transparent",
+                "Final"
+              ],
+              "accessorKind": "get"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "emptyRequestMethods",
+          "printedName": "emptyRequestMethods",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Set",
+              "printedName": "Swift.Set<Alamofire.HTTPMethod>",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "HTTPMethod",
+                  "printedName": "Alamofire.HTTPMethod",
+                  "usr": "s:9Alamofire10HTTPMethodV"
+                }
+              ],
+              "usr": "s:Sh"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:21AlamofireObjectMapper31MappableArrayResponseSerializerC19emptyRequestMethodsShy0A010HTTPMethodVGvp",
+          "mangledName": "$s21AlamofireObjectMapper31MappableArrayResponseSerializerC19emptyRequestMethodsShy0A010HTTPMethodVGvp",
+          "moduleName": "AlamofireObjectMapper",
+          "declAttributes": [
+            "Final",
+            "HasStorage"
+          ],
+          "fixedbinaryorder": 2,
+          "isLet": true,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Set",
+                  "printedName": "Swift.Set<Alamofire.HTTPMethod>",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "HTTPMethod",
+                      "printedName": "Alamofire.HTTPMethod",
+                      "usr": "s:9Alamofire10HTTPMethodV"
+                    }
+                  ],
+                  "usr": "s:Sh"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:21AlamofireObjectMapper31MappableArrayResponseSerializerC19emptyRequestMethodsShy0A010HTTPMethodVGvg",
+              "mangledName": "$s21AlamofireObjectMapper31MappableArrayResponseSerializerC19emptyRequestMethodsShy0A010HTTPMethodVGvg",
+              "moduleName": "AlamofireObjectMapper",
+              "genericSig": "<τ_0_0 where τ_0_0 : ObjectMapper.BaseMappable>",
+              "sugared_genericSig": "<T where T : ObjectMapper.BaseMappable>",
+              "implicit": true,
+              "declAttributes": [
+                "Transparent",
+                "Final"
+              ],
+              "accessorKind": "get"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "keyPath",
+          "printedName": "keyPath",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "Swift.String?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "String",
+                  "printedName": "Swift.String",
+                  "usr": "s:SS"
+                }
+              ],
+              "usr": "s:Sq"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:21AlamofireObjectMapper31MappableArrayResponseSerializerC7keyPathSSSgvp",
+          "mangledName": "$s21AlamofireObjectMapper31MappableArrayResponseSerializerC7keyPathSSSgvp",
+          "moduleName": "AlamofireObjectMapper",
+          "declAttributes": [
+            "Final",
+            "HasStorage"
+          ],
+          "fixedbinaryorder": 3,
+          "isLet": true,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Optional",
+                  "printedName": "Swift.String?",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "String",
+                      "printedName": "Swift.String",
+                      "usr": "s:SS"
+                    }
+                  ],
+                  "usr": "s:Sq"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:21AlamofireObjectMapper31MappableArrayResponseSerializerC7keyPathSSSgvg",
+              "mangledName": "$s21AlamofireObjectMapper31MappableArrayResponseSerializerC7keyPathSSSgvg",
+              "moduleName": "AlamofireObjectMapper",
+              "genericSig": "<τ_0_0 where τ_0_0 : ObjectMapper.BaseMappable>",
+              "sugared_genericSig": "<T where T : ObjectMapper.BaseMappable>",
+              "implicit": true,
+              "declAttributes": [
+                "Transparent",
+                "Final"
+              ],
+              "accessorKind": "get"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "context",
+          "printedName": "context",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "ObjectMapper.MapContext?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "MapContext",
+                  "printedName": "ObjectMapper.MapContext",
+                  "usr": "s:12ObjectMapper10MapContextP"
+                }
+              ],
+              "usr": "s:Sq"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:21AlamofireObjectMapper31MappableArrayResponseSerializerC7context0bC010MapContext_pSgvp",
+          "mangledName": "$s21AlamofireObjectMapper31MappableArrayResponseSerializerC7context0bC010MapContext_pSgvp",
+          "moduleName": "AlamofireObjectMapper",
+          "declAttributes": [
+            "Final",
+            "HasStorage"
+          ],
+          "fixedbinaryorder": 4,
+          "isLet": true,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Optional",
+                  "printedName": "ObjectMapper.MapContext?",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "MapContext",
+                      "printedName": "ObjectMapper.MapContext",
+                      "usr": "s:12ObjectMapper10MapContextP"
+                    }
+                  ],
+                  "usr": "s:Sq"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:21AlamofireObjectMapper31MappableArrayResponseSerializerC7context0bC010MapContext_pSgvg",
+              "mangledName": "$s21AlamofireObjectMapper31MappableArrayResponseSerializerC7context0bC010MapContext_pSgvg",
+              "moduleName": "AlamofireObjectMapper",
+              "genericSig": "<τ_0_0 where τ_0_0 : ObjectMapper.BaseMappable>",
+              "sugared_genericSig": "<T where T : ObjectMapper.BaseMappable>",
+              "implicit": true,
+              "declAttributes": [
+                "Transparent",
+                "Final"
+              ],
+              "accessorKind": "get"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "serializeCallback",
+          "printedName": "serializeCallback",
+          "children": [
+            {
+              "kind": "TypeFunc",
+              "name": "Function",
+              "printedName": "(Foundation.URLRequest?, Foundation.HTTPURLResponse?, Foundation.Data?, Swift.Error?) throws -> [τ_0_0]",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Array",
+                  "printedName": "[τ_0_0]",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "GenericTypeParam",
+                      "printedName": "τ_0_0"
+                    }
+                  ],
+                  "usr": "s:Sa"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "Tuple",
+                  "printedName": "(Foundation.URLRequest?, Foundation.HTTPURLResponse?, Foundation.Data?, Swift.Error?)",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "Optional",
+                      "printedName": "Foundation.URLRequest?",
+                      "children": [
+                        {
+                          "kind": "TypeNominal",
+                          "name": "URLRequest",
+                          "printedName": "Foundation.URLRequest",
+                          "usr": "s:10Foundation10URLRequestV"
+                        }
+                      ],
+                      "usr": "s:Sq"
+                    },
+                    {
+                      "kind": "TypeNominal",
+                      "name": "Optional",
+                      "printedName": "Foundation.HTTPURLResponse?",
+                      "children": [
+                        {
+                          "kind": "TypeNominal",
+                          "name": "HTTPURLResponse",
+                          "printedName": "Foundation.HTTPURLResponse",
+                          "usr": "c:objc(cs)NSHTTPURLResponse"
+                        }
+                      ],
+                      "usr": "s:Sq"
+                    },
+                    {
+                      "kind": "TypeNominal",
+                      "name": "Optional",
+                      "printedName": "Foundation.Data?",
+                      "children": [
+                        {
+                          "kind": "TypeNominal",
+                          "name": "Data",
+                          "printedName": "Foundation.Data",
+                          "usr": "s:10Foundation4DataV"
+                        }
+                      ],
+                      "usr": "s:Sq"
+                    },
+                    {
+                      "kind": "TypeNominal",
+                      "name": "Optional",
+                      "printedName": "Swift.Error?",
+                      "children": [
+                        {
+                          "kind": "TypeNominal",
+                          "name": "Error",
+                          "printedName": "Swift.Error",
+                          "usr": "s:s5ErrorP"
+                        }
+                      ],
+                      "usr": "s:Sq"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:21AlamofireObjectMapper31MappableArrayResponseSerializerC17serializeCallbackySayxG10Foundation10URLRequestVSg_So17NSHTTPURLResponseCSgAF4DataVSgs5Error_pSgtKcvp",
+          "mangledName": "$s21AlamofireObjectMapper31MappableArrayResponseSerializerC17serializeCallbackySayxG10Foundation10URLRequestVSg_So17NSHTTPURLResponseCSgAF4DataVSgs5Error_pSgtKcvp",
+          "moduleName": "AlamofireObjectMapper",
+          "declAttributes": [
+            "Final",
+            "HasStorage"
+          ],
+          "fixedbinaryorder": 5,
+          "isLet": true,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeFunc",
+                  "name": "Function",
+                  "printedName": "(Foundation.URLRequest?, Foundation.HTTPURLResponse?, Foundation.Data?, Swift.Error?) throws -> [τ_0_0]",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "Array",
+                      "printedName": "[τ_0_0]",
+                      "children": [
+                        {
+                          "kind": "TypeNominal",
+                          "name": "GenericTypeParam",
+                          "printedName": "τ_0_0"
+                        }
+                      ],
+                      "usr": "s:Sa"
+                    },
+                    {
+                      "kind": "TypeNominal",
+                      "name": "Tuple",
+                      "printedName": "(Foundation.URLRequest?, Foundation.HTTPURLResponse?, Foundation.Data?, Swift.Error?)",
+                      "children": [
+                        {
+                          "kind": "TypeNominal",
+                          "name": "Optional",
+                          "printedName": "Foundation.URLRequest?",
+                          "children": [
+                            {
+                              "kind": "TypeNominal",
+                              "name": "URLRequest",
+                              "printedName": "Foundation.URLRequest",
+                              "usr": "s:10Foundation10URLRequestV"
+                            }
+                          ],
+                          "usr": "s:Sq"
+                        },
+                        {
+                          "kind": "TypeNominal",
+                          "name": "Optional",
+                          "printedName": "Foundation.HTTPURLResponse?",
+                          "children": [
+                            {
+                              "kind": "TypeNominal",
+                              "name": "HTTPURLResponse",
+                              "printedName": "Foundation.HTTPURLResponse",
+                              "usr": "c:objc(cs)NSHTTPURLResponse"
+                            }
+                          ],
+                          "usr": "s:Sq"
+                        },
+                        {
+                          "kind": "TypeNominal",
+                          "name": "Optional",
+                          "printedName": "Foundation.Data?",
+                          "children": [
+                            {
+                              "kind": "TypeNominal",
+                              "name": "Data",
+                              "printedName": "Foundation.Data",
+                              "usr": "s:10Foundation4DataV"
+                            }
+                          ],
+                          "usr": "s:Sq"
+                        },
+                        {
+                          "kind": "TypeNominal",
+                          "name": "Optional",
+                          "printedName": "Swift.Error?",
+                          "children": [
+                            {
+                              "kind": "TypeNominal",
+                              "name": "Error",
+                              "printedName": "Swift.Error",
+                              "usr": "s:s5ErrorP"
+                            }
+                          ],
+                          "usr": "s:Sq"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:21AlamofireObjectMapper31MappableArrayResponseSerializerC17serializeCallbackySayxG10Foundation10URLRequestVSg_So17NSHTTPURLResponseCSgAF4DataVSgs5Error_pSgtKcvg",
+              "mangledName": "$s21AlamofireObjectMapper31MappableArrayResponseSerializerC17serializeCallbackySayxG10Foundation10URLRequestVSg_So17NSHTTPURLResponseCSgAF4DataVSgs5Error_pSgtKcvg",
+              "moduleName": "AlamofireObjectMapper",
+              "genericSig": "<τ_0_0 where τ_0_0 : ObjectMapper.BaseMappable>",
+              "sugared_genericSig": "<T where T : ObjectMapper.BaseMappable>",
+              "implicit": true,
+              "declAttributes": [
+                "Transparent",
+                "Final"
+              ],
+              "accessorKind": "get"
+            }
+          ]
+        },
+        {
+          "kind": "Constructor",
+          "name": "init",
+          "printedName": "init(_:context:serializeCallback:emptyResponseCodes:emptyRequestMethods:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "MappableArrayResponseSerializer",
+              "printedName": "AlamofireObjectMapper.MappableArrayResponseSerializer<τ_0_0>",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "GenericTypeParam",
+                  "printedName": "τ_0_0"
+                }
+              ],
+              "usr": "s:21AlamofireObjectMapper31MappableArrayResponseSerializerC"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "Swift.String?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "String",
+                  "printedName": "Swift.String",
+                  "usr": "s:SS"
+                }
+              ],
+              "usr": "s:Sq"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "ObjectMapper.MapContext?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "MapContext",
+                  "printedName": "ObjectMapper.MapContext",
+                  "usr": "s:12ObjectMapper10MapContextP"
+                }
+              ],
+              "hasDefaultArg": true,
+              "usr": "s:Sq"
+            },
+            {
+              "kind": "TypeFunc",
+              "name": "Function",
+              "printedName": "(Foundation.URLRequest?, Foundation.HTTPURLResponse?, Foundation.Data?, Swift.Error?) throws -> [τ_0_0]",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Array",
+                  "printedName": "[τ_0_0]",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "GenericTypeParam",
+                      "printedName": "τ_0_0"
+                    }
+                  ],
+                  "usr": "s:Sa"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "Tuple",
+                  "printedName": "(Foundation.URLRequest?, Foundation.HTTPURLResponse?, Foundation.Data?, Swift.Error?)",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "Optional",
+                      "printedName": "Foundation.URLRequest?",
+                      "children": [
+                        {
+                          "kind": "TypeNominal",
+                          "name": "URLRequest",
+                          "printedName": "Foundation.URLRequest",
+                          "usr": "s:10Foundation10URLRequestV"
+                        }
+                      ],
+                      "usr": "s:Sq"
+                    },
+                    {
+                      "kind": "TypeNominal",
+                      "name": "Optional",
+                      "printedName": "Foundation.HTTPURLResponse?",
+                      "children": [
+                        {
+                          "kind": "TypeNominal",
+                          "name": "HTTPURLResponse",
+                          "printedName": "Foundation.HTTPURLResponse",
+                          "usr": "c:objc(cs)NSHTTPURLResponse"
+                        }
+                      ],
+                      "usr": "s:Sq"
+                    },
+                    {
+                      "kind": "TypeNominal",
+                      "name": "Optional",
+                      "printedName": "Foundation.Data?",
+                      "children": [
+                        {
+                          "kind": "TypeNominal",
+                          "name": "Data",
+                          "printedName": "Foundation.Data",
+                          "usr": "s:10Foundation4DataV"
+                        }
+                      ],
+                      "usr": "s:Sq"
+                    },
+                    {
+                      "kind": "TypeNominal",
+                      "name": "Optional",
+                      "printedName": "Swift.Error?",
+                      "children": [
+                        {
+                          "kind": "TypeNominal",
+                          "name": "Error",
+                          "printedName": "Swift.Error",
+                          "usr": "s:s5ErrorP"
+                        }
+                      ],
+                      "usr": "s:Sq"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Set",
+              "printedName": "Swift.Set<Swift.Int>",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Int",
+                  "printedName": "Swift.Int",
+                  "usr": "s:Si"
+                }
+              ],
+              "hasDefaultArg": true,
+              "usr": "s:Sh"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Set",
+              "printedName": "Swift.Set<Alamofire.HTTPMethod>",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "HTTPMethod",
+                  "printedName": "Alamofire.HTTPMethod",
+                  "usr": "s:9Alamofire10HTTPMethodV"
+                }
+              ],
+              "hasDefaultArg": true,
+              "usr": "s:Sh"
+            }
+          ],
+          "declKind": "Constructor",
+          "usr": "s:21AlamofireObjectMapper31MappableArrayResponseSerializerC_7context17serializeCallback05emptyF5Codes0K14RequestMethodsACyxGSSSg_0bC010MapContext_pSgSayxG10Foundation10URLRequestVSg_So17NSHTTPURLResponseCSgAN4DataVSgs5Error_pSgtKcShySiGShy0A010HTTPMethodVGtcfc",
+          "mangledName": "$s21AlamofireObjectMapper31MappableArrayResponseSerializerC_7context17serializeCallback05emptyF5Codes0K14RequestMethodsACyxGSSSg_0bC010MapContext_pSgSayxG10Foundation10URLRequestVSg_So17NSHTTPURLResponseCSgAN4DataVSgs5Error_pSgtKcShySiGShy0A010HTTPMethodVGtcfc",
+          "moduleName": "AlamofireObjectMapper",
+          "genericSig": "<τ_0_0 where τ_0_0 : ObjectMapper.BaseMappable>",
+          "sugared_genericSig": "<T where T : ObjectMapper.BaseMappable>",
+          "init_kind": "Designated"
+        },
+        {
+          "kind": "Function",
+          "name": "serialize",
+          "printedName": "serialize(request:response:data:error:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Array",
+              "printedName": "[τ_0_0]",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "GenericTypeParam",
+                  "printedName": "τ_0_0"
+                }
+              ],
+              "usr": "s:Sa"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "Foundation.URLRequest?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "URLRequest",
+                  "printedName": "Foundation.URLRequest",
+                  "usr": "s:10Foundation10URLRequestV"
+                }
+              ],
+              "usr": "s:Sq"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "Foundation.HTTPURLResponse?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "HTTPURLResponse",
+                  "printedName": "Foundation.HTTPURLResponse",
+                  "usr": "c:objc(cs)NSHTTPURLResponse"
+                }
+              ],
+              "usr": "s:Sq"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "Foundation.Data?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Data",
+                  "printedName": "Foundation.Data",
+                  "usr": "s:10Foundation4DataV"
+                }
+              ],
+              "usr": "s:Sq"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "Swift.Error?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Error",
+                  "printedName": "Swift.Error",
+                  "usr": "s:s5ErrorP"
+                }
+              ],
+              "usr": "s:Sq"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:21AlamofireObjectMapper31MappableArrayResponseSerializerC9serialize7request8response4data5errorSayxG10Foundation10URLRequestVSg_So17NSHTTPURLResponseCSgAJ4DataVSgs5Error_pSgtKF",
+          "mangledName": "$s21AlamofireObjectMapper31MappableArrayResponseSerializerC9serialize7request8response4data5errorSayxG10Foundation10URLRequestVSg_So17NSHTTPURLResponseCSgAJ4DataVSgs5Error_pSgtKF",
+          "moduleName": "AlamofireObjectMapper",
+          "genericSig": "<τ_0_0 where τ_0_0 : ObjectMapper.BaseMappable>",
+          "sugared_genericSig": "<T where T : ObjectMapper.BaseMappable>",
+          "declAttributes": [
+            "Final"
+          ],
+          "throwing": true,
+          "funcSelfKind": "NonMutating"
+        }
+      ],
+      "declKind": "Class",
+      "usr": "s:21AlamofireObjectMapper31MappableArrayResponseSerializerC",
+      "mangledName": "$s21AlamofireObjectMapper31MappableArrayResponseSerializerC",
+      "moduleName": "AlamofireObjectMapper",
+      "genericSig": "<τ_0_0 where τ_0_0 : ObjectMapper.BaseMappable>",
+      "sugared_genericSig": "<T where T : ObjectMapper.BaseMappable>",
+      "declAttributes": [
+        "Final"
+      ],
+      "conformances": [
+        {
+          "kind": "Conformance",
+          "name": "ResponseSerializer",
+          "printedName": "ResponseSerializer",
+          "usr": "s:9Alamofire18ResponseSerializerP",
+          "mangledName": "$s9Alamofire18ResponseSerializerP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "DataResponseSerializerProtocol",
+          "printedName": "DataResponseSerializerProtocol",
+          "children": [
+            {
+              "kind": "TypeWitness",
+              "name": "SerializedObject",
+              "printedName": "SerializedObject",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Array",
+                  "printedName": "[τ_0_0]",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "GenericTypeParam",
+                      "printedName": "τ_0_0"
+                    }
+                  ],
+                  "usr": "s:Sa"
+                }
+              ]
+            }
+          ],
+          "usr": "s:9Alamofire30DataResponseSerializerProtocolP",
+          "mangledName": "$s9Alamofire30DataResponseSerializerProtocolP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "DownloadResponseSerializerProtocol",
+          "printedName": "DownloadResponseSerializerProtocol",
+          "children": [
+            {
+              "kind": "TypeWitness",
+              "name": "SerializedObject",
+              "printedName": "SerializedObject",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Array",
+                  "printedName": "[τ_0_0]",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "GenericTypeParam",
+                      "printedName": "τ_0_0"
+                    }
+                  ],
+                  "usr": "s:Sa"
+                }
+              ]
+            }
+          ],
+          "usr": "s:9Alamofire34DownloadResponseSerializerProtocolP",
+          "mangledName": "$s9Alamofire34DownloadResponseSerializerProtocolP"
+        }
+      ]
+    },
+    {
+      "kind": "TypeDecl",
+      "name": "DataRequest",
+      "printedName": "DataRequest",
+      "children": [
+        {
+          "kind": "TypeDecl",
+          "name": "ErrorCode",
+          "printedName": "ErrorCode",
+          "children": [
+            {
+              "kind": "Var",
+              "name": "noData",
+              "printedName": "noData",
+              "children": [
+                {
+                  "kind": "TypeFunc",
+                  "name": "Function",
+                  "printedName": "(Alamofire.DataRequest.ErrorCode.Type) -> Alamofire.DataRequest.ErrorCode",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "ErrorCode",
+                      "printedName": "Alamofire.DataRequest.ErrorCode",
+                      "usr": "s:9Alamofire11DataRequestC0A12ObjectMapperE9ErrorCodeO"
+                    },
+                    {
+                      "kind": "TypeNominal",
+                      "name": "Metatype",
+                      "printedName": "Alamofire.DataRequest.ErrorCode.Type",
+                      "children": [
+                        {
+                          "kind": "TypeNominal",
+                          "name": "ErrorCode",
+                          "printedName": "Alamofire.DataRequest.ErrorCode",
+                          "usr": "s:9Alamofire11DataRequestC0A12ObjectMapperE9ErrorCodeO"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "declKind": "EnumElement",
+              "usr": "s:9Alamofire11DataRequestC0A12ObjectMapperE9ErrorCodeO02noB0yA2FmF",
+              "mangledName": "$s9Alamofire11DataRequestC0A12ObjectMapperE9ErrorCodeO02noB0yA2FmF",
+              "moduleName": "AlamofireObjectMapper",
+              "fixedbinaryorder": 0
+            },
+            {
+              "kind": "Var",
+              "name": "dataSerializationFailed",
+              "printedName": "dataSerializationFailed",
+              "children": [
+                {
+                  "kind": "TypeFunc",
+                  "name": "Function",
+                  "printedName": "(Alamofire.DataRequest.ErrorCode.Type) -> Alamofire.DataRequest.ErrorCode",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "ErrorCode",
+                      "printedName": "Alamofire.DataRequest.ErrorCode",
+                      "usr": "s:9Alamofire11DataRequestC0A12ObjectMapperE9ErrorCodeO"
+                    },
+                    {
+                      "kind": "TypeNominal",
+                      "name": "Metatype",
+                      "printedName": "Alamofire.DataRequest.ErrorCode.Type",
+                      "children": [
+                        {
+                          "kind": "TypeNominal",
+                          "name": "ErrorCode",
+                          "printedName": "Alamofire.DataRequest.ErrorCode",
+                          "usr": "s:9Alamofire11DataRequestC0A12ObjectMapperE9ErrorCodeO"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "declKind": "EnumElement",
+              "usr": "s:9Alamofire11DataRequestC0A12ObjectMapperE9ErrorCodeO23dataSerializationFailedyA2FmF",
+              "mangledName": "$s9Alamofire11DataRequestC0A12ObjectMapperE9ErrorCodeO23dataSerializationFailedyA2FmF",
+              "moduleName": "AlamofireObjectMapper",
+              "fixedbinaryorder": 1
+            },
+            {
+              "kind": "Constructor",
+              "name": "init",
+              "printedName": "init(rawValue:)",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Optional",
+                  "printedName": "Alamofire.DataRequest.ErrorCode?",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "ErrorCode",
+                      "printedName": "Alamofire.DataRequest.ErrorCode",
+                      "usr": "s:9Alamofire11DataRequestC0A12ObjectMapperE9ErrorCodeO"
+                    }
+                  ],
+                  "usr": "s:Sq"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "Int",
+                  "printedName": "Swift.Int",
+                  "usr": "s:Si"
+                }
+              ],
+              "declKind": "Constructor",
+              "usr": "s:9Alamofire11DataRequestC0A12ObjectMapperE9ErrorCodeO8rawValueAFSgSi_tcfc",
+              "mangledName": "$s9Alamofire11DataRequestC0A12ObjectMapperE9ErrorCodeO8rawValueAFSgSi_tcfc",
+              "moduleName": "AlamofireObjectMapper",
+              "implicit": true,
+              "init_kind": "Designated"
+            },
+            {
+              "kind": "Var",
+              "name": "rawValue",
+              "printedName": "rawValue",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Int",
+                  "printedName": "Swift.Int",
+                  "usr": "s:Si"
+                }
+              ],
+              "declKind": "Var",
+              "usr": "s:9Alamofire11DataRequestC0A12ObjectMapperE9ErrorCodeO8rawValueSivp",
+              "mangledName": "$s9Alamofire11DataRequestC0A12ObjectMapperE9ErrorCodeO8rawValueSivp",
+              "moduleName": "AlamofireObjectMapper",
+              "implicit": true,
+              "accessors": [
+                {
+                  "kind": "Accessor",
+                  "name": "Get",
+                  "printedName": "Get()",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "Int",
+                      "printedName": "Swift.Int",
+                      "usr": "s:Si"
+                    }
+                  ],
+                  "declKind": "Accessor",
+                  "usr": "s:9Alamofire11DataRequestC0A12ObjectMapperE9ErrorCodeO8rawValueSivg",
+                  "mangledName": "$s9Alamofire11DataRequestC0A12ObjectMapperE9ErrorCodeO8rawValueSivg",
+                  "moduleName": "AlamofireObjectMapper",
+                  "implicit": true,
+                  "accessorKind": "get"
+                }
+              ]
+            }
+          ],
+          "declKind": "Enum",
+          "usr": "s:9Alamofire11DataRequestC0A12ObjectMapperE9ErrorCodeO",
+          "mangledName": "$s9Alamofire11DataRequestC0A12ObjectMapperE9ErrorCodeO",
+          "moduleName": "AlamofireObjectMapper",
+          "enumRawTypeName": "Int",
+          "isEnumExhaustive": true,
+          "conformances": [
+            {
+              "kind": "Conformance",
+              "name": "Hashable",
+              "printedName": "Hashable",
+              "usr": "s:SH",
+              "mangledName": "$sSH"
+            },
+            {
+              "kind": "Conformance",
+              "name": "RawRepresentable",
+              "printedName": "RawRepresentable",
+              "children": [
+                {
+                  "kind": "TypeWitness",
+                  "name": "RawValue",
+                  "printedName": "RawValue",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "Int",
+                      "printedName": "Swift.Int",
+                      "usr": "s:Si"
+                    }
+                  ]
+                }
+              ],
+              "usr": "s:SY",
+              "mangledName": "$sSY"
+            },
+            {
+              "kind": "Conformance",
+              "name": "Equatable",
+              "printedName": "Equatable",
+              "usr": "s:SQ",
+              "mangledName": "$sSQ"
+            },
+            {
+              "kind": "Conformance",
+              "name": "Sendable",
+              "printedName": "Sendable",
+              "usr": "s:s8SendableP",
+              "mangledName": "$ss8SendableP"
+            }
+          ]
+        },
+        {
+          "kind": "Function",
+          "name": "processResponse",
+          "printedName": "processResponse(request:response:data:keyPath:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "Any?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "ProtocolComposition",
+                  "printedName": "Any"
+                }
+              ],
+              "usr": "s:Sq"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "Foundation.URLRequest?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "URLRequest",
+                  "printedName": "Foundation.URLRequest",
+                  "usr": "s:10Foundation10URLRequestV"
+                }
+              ],
+              "usr": "s:Sq"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "Foundation.HTTPURLResponse?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "HTTPURLResponse",
+                  "printedName": "Foundation.HTTPURLResponse",
+                  "usr": "c:objc(cs)NSHTTPURLResponse"
+                }
+              ],
+              "usr": "s:Sq"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "Foundation.Data?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Data",
+                  "printedName": "Foundation.Data",
+                  "usr": "s:10Foundation4DataV"
+                }
+              ],
+              "usr": "s:Sq"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "Swift.String?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "String",
+                  "printedName": "Swift.String",
+                  "usr": "s:SS"
+                }
+              ],
+              "usr": "s:Sq"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:9Alamofire11DataRequestC0A12ObjectMapperE15processResponse7request8response4data7keyPathypSg10Foundation10URLRequestVSg_So17NSHTTPURLResponseCSgAK0B0VSgSSSgtFZ",
+          "mangledName": "$s9Alamofire11DataRequestC0A12ObjectMapperE15processResponse7request8response4data7keyPathypSg10Foundation10URLRequestVSg_So17NSHTTPURLResponseCSgAK0B0VSgSSSgtFZ",
+          "moduleName": "AlamofireObjectMapper",
+          "static": true,
+          "declAttributes": [
+            "Final"
+          ],
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "newError",
+          "printedName": "newError(_:failureReason:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "NSError",
+              "printedName": "Foundation.NSError",
+              "usr": "c:objc(cs)NSError"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "ErrorCode",
+              "printedName": "Alamofire.DataRequest.ErrorCode",
+              "usr": "s:9Alamofire11DataRequestC0A12ObjectMapperE9ErrorCodeO"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "String",
+              "printedName": "Swift.String",
+              "usr": "s:SS"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:9Alamofire11DataRequestC0A12ObjectMapperE8newError_13failureReasonSo7NSErrorCAcDE0G4CodeO_SStFZ",
+          "mangledName": "$s9Alamofire11DataRequestC0A12ObjectMapperE8newError_13failureReasonSo7NSErrorCAcDE0G4CodeO_SStFZ",
+          "moduleName": "AlamofireObjectMapper",
+          "static": true,
+          "declAttributes": [
+            "Final"
+          ],
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "checkResponseForError",
+          "printedName": "checkResponseForError(request:response:data:error:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "Swift.Error?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Error",
+                  "printedName": "Swift.Error",
+                  "usr": "s:s5ErrorP"
+                }
+              ],
+              "usr": "s:Sq"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "Foundation.URLRequest?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "URLRequest",
+                  "printedName": "Foundation.URLRequest",
+                  "usr": "s:10Foundation10URLRequestV"
+                }
+              ],
+              "usr": "s:Sq"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "Foundation.HTTPURLResponse?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "HTTPURLResponse",
+                  "printedName": "Foundation.HTTPURLResponse",
+                  "usr": "c:objc(cs)NSHTTPURLResponse"
+                }
+              ],
+              "usr": "s:Sq"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "Foundation.Data?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Data",
+                  "printedName": "Foundation.Data",
+                  "usr": "s:10Foundation4DataV"
+                }
+              ],
+              "usr": "s:Sq"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "Swift.Error?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Error",
+                  "printedName": "Swift.Error",
+                  "usr": "s:s5ErrorP"
+                }
+              ],
+              "usr": "s:Sq"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:9Alamofire11DataRequestC0A12ObjectMapperE21checkResponseForError7request8response4data5errors0I0_pSg10Foundation10URLRequestVSg_So17NSHTTPURLResponseCSgAL0B0VSgAKtFZ",
+          "mangledName": "$s9Alamofire11DataRequestC0A12ObjectMapperE21checkResponseForError7request8response4data5errors0I0_pSg10Foundation10URLRequestVSg_So17NSHTTPURLResponseCSgAL0B0VSgAKtFZ",
+          "moduleName": "AlamofireObjectMapper",
+          "static": true,
+          "declAttributes": [
+            "Final"
+          ],
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "ObjectMapperSerializer",
+          "printedName": "ObjectMapperSerializer(_:mapToObject:context:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "MappableResponseSerializer",
+              "printedName": "AlamofireObjectMapper.MappableResponseSerializer<τ_0_0>",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "GenericTypeParam",
+                  "printedName": "τ_0_0"
+                }
+              ],
+              "usr": "s:21AlamofireObjectMapper26MappableResponseSerializerC"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "Swift.String?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "String",
+                  "printedName": "Swift.String",
+                  "usr": "s:SS"
+                }
+              ],
+              "usr": "s:Sq"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "τ_0_0?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "GenericTypeParam",
+                  "printedName": "τ_0_0"
+                }
+              ],
+              "hasDefaultArg": true,
+              "usr": "s:Sq"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "ObjectMapper.MapContext?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "MapContext",
+                  "printedName": "ObjectMapper.MapContext",
+                  "usr": "s:12ObjectMapper10MapContextP"
+                }
+              ],
+              "hasDefaultArg": true,
+              "usr": "s:Sq"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:9Alamofire11DataRequestC0A12ObjectMapperE0dE10Serializer_05mapToD07contextAD016MappableResponseF0CyxGSSSg_xSg0dE010MapContext_pSgtAM04BaseJ0RzlFZ",
+          "mangledName": "$s9Alamofire11DataRequestC0A12ObjectMapperE0dE10Serializer_05mapToD07contextAD016MappableResponseF0CyxGSSSg_xSg0dE010MapContext_pSgtAM04BaseJ0RzlFZ",
+          "moduleName": "AlamofireObjectMapper",
+          "genericSig": "<τ_0_0 where τ_0_0 : ObjectMapper.BaseMappable>",
+          "sugared_genericSig": "<T where T : ObjectMapper.BaseMappable>",
+          "static": true,
+          "declAttributes": [
+            "Final"
+          ],
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "ObjectMapperImmutableSerializer",
+          "printedName": "ObjectMapperImmutableSerializer(_:context:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "MappableResponseSerializer",
+              "printedName": "AlamofireObjectMapper.MappableResponseSerializer<τ_0_0>",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "GenericTypeParam",
+                  "printedName": "τ_0_0"
+                }
+              ],
+              "usr": "s:21AlamofireObjectMapper26MappableResponseSerializerC"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "Swift.String?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "String",
+                  "printedName": "Swift.String",
+                  "usr": "s:SS"
+                }
+              ],
+              "usr": "s:Sq"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "ObjectMapper.MapContext?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "MapContext",
+                  "printedName": "ObjectMapper.MapContext",
+                  "usr": "s:12ObjectMapper10MapContextP"
+                }
+              ],
+              "hasDefaultArg": true,
+              "usr": "s:Sq"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:9Alamofire11DataRequestC0A12ObjectMapperE0dE19ImmutableSerializer_7contextAD016MappableResponseG0CyxGSSSg_0dE010MapContext_pSgtAK0fI0RzlFZ",
+          "mangledName": "$s9Alamofire11DataRequestC0A12ObjectMapperE0dE19ImmutableSerializer_7contextAD016MappableResponseG0CyxGSSSg_0dE010MapContext_pSgtAK0fI0RzlFZ",
+          "moduleName": "AlamofireObjectMapper",
+          "genericSig": "<τ_0_0 where τ_0_0 : ObjectMapper.ImmutableMappable>",
+          "sugared_genericSig": "<T where T : ObjectMapper.ImmutableMappable>",
+          "static": true,
+          "declAttributes": [
+            "Final"
+          ],
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "responseObject",
+          "printedName": "responseObject(queue:keyPath:mapToObject:context:completionHandler:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "DynamicSelf",
+              "printedName": "Self"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "DispatchQueue",
+              "printedName": "Dispatch.DispatchQueue",
+              "hasDefaultArg": true,
+              "usr": "c:objc(cs)OS_dispatch_queue"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "Swift.String?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "String",
+                  "printedName": "Swift.String",
+                  "usr": "s:SS"
+                }
+              ],
+              "hasDefaultArg": true,
+              "usr": "s:Sq"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "τ_0_0?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "GenericTypeParam",
+                  "printedName": "τ_0_0"
+                }
+              ],
+              "hasDefaultArg": true,
+              "usr": "s:Sq"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "ObjectMapper.MapContext?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "MapContext",
+                  "printedName": "ObjectMapper.MapContext",
+                  "usr": "s:12ObjectMapper10MapContextP"
+                }
+              ],
+              "hasDefaultArg": true,
+              "usr": "s:Sq"
+            },
+            {
+              "kind": "TypeFunc",
+              "name": "Function",
+              "printedName": "(Alamofire.DataResponse<τ_0_0, Alamofire.AFError>) -> ()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "DataResponse",
+                  "printedName": "Alamofire.DataResponse<τ_0_0, Alamofire.AFError>",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "GenericTypeParam",
+                      "printedName": "τ_0_0"
+                    },
+                    {
+                      "kind": "TypeNominal",
+                      "name": "AFError",
+                      "printedName": "Alamofire.AFError",
+                      "usr": "s:9Alamofire7AFErrorO"
+                    }
+                  ],
+                  "usr": "s:9Alamofire12DataResponseV"
+                }
+              ]
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:9Alamofire11DataRequestC0A12ObjectMapperE08responseD05queue7keyPath05mapToD07context17completionHandlerACXDSo012OS_dispatch_G0C_SSSgxSg0dE010MapContext_pSgyAA0B8ResponseVyxAA7AFErrorOGctAO12BaseMappableRzlF",
+          "mangledName": "$s9Alamofire11DataRequestC0A12ObjectMapperE08responseD05queue7keyPath05mapToD07context17completionHandlerACXDSo012OS_dispatch_G0C_SSSgxSg0dE010MapContext_pSgyAA0B8ResponseVyxAA7AFErrorOGctAO12BaseMappableRzlF",
+          "moduleName": "AlamofireObjectMapper",
+          "genericSig": "<τ_0_0 where τ_0_0 : ObjectMapper.BaseMappable>",
+          "sugared_genericSig": "<T where T : ObjectMapper.BaseMappable>",
+          "isOpen": true,
+          "declAttributes": [
+            "DiscardableResult"
+          ],
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "responseObject",
+          "printedName": "responseObject(queue:keyPath:mapToObject:context:completionHandler:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "DynamicSelf",
+              "printedName": "Self"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "DispatchQueue",
+              "printedName": "Dispatch.DispatchQueue",
+              "hasDefaultArg": true,
+              "usr": "c:objc(cs)OS_dispatch_queue"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "Swift.String?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "String",
+                  "printedName": "Swift.String",
+                  "usr": "s:SS"
+                }
+              ],
+              "hasDefaultArg": true,
+              "usr": "s:Sq"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "τ_0_0?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "GenericTypeParam",
+                  "printedName": "τ_0_0"
+                }
+              ],
+              "hasDefaultArg": true,
+              "usr": "s:Sq"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "ObjectMapper.MapContext?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "MapContext",
+                  "printedName": "ObjectMapper.MapContext",
+                  "usr": "s:12ObjectMapper10MapContextP"
+                }
+              ],
+              "hasDefaultArg": true,
+              "usr": "s:Sq"
+            },
+            {
+              "kind": "TypeFunc",
+              "name": "Function",
+              "printedName": "(Alamofire.DataResponse<τ_0_0, Alamofire.AFError>) -> ()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "DataResponse",
+                  "printedName": "Alamofire.DataResponse<τ_0_0, Alamofire.AFError>",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "GenericTypeParam",
+                      "printedName": "τ_0_0"
+                    },
+                    {
+                      "kind": "TypeNominal",
+                      "name": "AFError",
+                      "printedName": "Alamofire.AFError",
+                      "usr": "s:9Alamofire7AFErrorO"
+                    }
+                  ],
+                  "usr": "s:9Alamofire12DataResponseV"
+                }
+              ]
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:9Alamofire11DataRequestC0A12ObjectMapperE08responseD05queue7keyPath05mapToD07context17completionHandlerACXDSo012OS_dispatch_G0C_SSSgxSg0dE010MapContext_pSgyAA0B8ResponseVyxAA7AFErrorOGctAO17ImmutableMappableRzlF",
+          "mangledName": "$s9Alamofire11DataRequestC0A12ObjectMapperE08responseD05queue7keyPath05mapToD07context17completionHandlerACXDSo012OS_dispatch_G0C_SSSgxSg0dE010MapContext_pSgyAA0B8ResponseVyxAA7AFErrorOGctAO17ImmutableMappableRzlF",
+          "moduleName": "AlamofireObjectMapper",
+          "genericSig": "<τ_0_0 where τ_0_0 : ObjectMapper.ImmutableMappable>",
+          "sugared_genericSig": "<T where T : ObjectMapper.ImmutableMappable>",
+          "isOpen": true,
+          "declAttributes": [
+            "DiscardableResult"
+          ],
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "ObjectMapperArraySerializer",
+          "printedName": "ObjectMapperArraySerializer(_:context:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "MappableArrayResponseSerializer",
+              "printedName": "AlamofireObjectMapper.MappableArrayResponseSerializer<τ_0_0>",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "GenericTypeParam",
+                  "printedName": "τ_0_0"
+                }
+              ],
+              "usr": "s:21AlamofireObjectMapper31MappableArrayResponseSerializerC"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "Swift.String?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "String",
+                  "printedName": "Swift.String",
+                  "usr": "s:SS"
+                }
+              ],
+              "usr": "s:Sq"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "ObjectMapper.MapContext?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "MapContext",
+                  "printedName": "ObjectMapper.MapContext",
+                  "usr": "s:12ObjectMapper10MapContextP"
+                }
+              ],
+              "hasDefaultArg": true,
+              "usr": "s:Sq"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:9Alamofire11DataRequestC0A12ObjectMapperE0dE15ArraySerializer_7contextAD08Mappablef8ResponseG0CyxGSSSg_0dE010MapContext_pSgtAK04BaseI0RzlFZ",
+          "mangledName": "$s9Alamofire11DataRequestC0A12ObjectMapperE0dE15ArraySerializer_7contextAD08Mappablef8ResponseG0CyxGSSSg_0dE010MapContext_pSgtAK04BaseI0RzlFZ",
+          "moduleName": "AlamofireObjectMapper",
+          "genericSig": "<τ_0_0 where τ_0_0 : ObjectMapper.BaseMappable>",
+          "sugared_genericSig": "<T where T : ObjectMapper.BaseMappable>",
+          "static": true,
+          "declAttributes": [
+            "Final"
+          ],
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "ObjectMapperImmutableArraySerializer",
+          "printedName": "ObjectMapperImmutableArraySerializer(_:context:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "MappableArrayResponseSerializer",
+              "printedName": "AlamofireObjectMapper.MappableArrayResponseSerializer<τ_0_0>",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "GenericTypeParam",
+                  "printedName": "τ_0_0"
+                }
+              ],
+              "usr": "s:21AlamofireObjectMapper31MappableArrayResponseSerializerC"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "Swift.String?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "String",
+                  "printedName": "Swift.String",
+                  "usr": "s:SS"
+                }
+              ],
+              "usr": "s:Sq"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "ObjectMapper.MapContext?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "MapContext",
+                  "printedName": "ObjectMapper.MapContext",
+                  "usr": "s:12ObjectMapper10MapContextP"
+                }
+              ],
+              "hasDefaultArg": true,
+              "usr": "s:Sq"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:9Alamofire11DataRequestC0A12ObjectMapperE0dE24ImmutableArraySerializer_7contextAD08Mappableg8ResponseH0CyxGSSSg_0dE010MapContext_pSgtAK0fJ0RzlFZ",
+          "mangledName": "$s9Alamofire11DataRequestC0A12ObjectMapperE0dE24ImmutableArraySerializer_7contextAD08Mappableg8ResponseH0CyxGSSSg_0dE010MapContext_pSgtAK0fJ0RzlFZ",
+          "moduleName": "AlamofireObjectMapper",
+          "genericSig": "<τ_0_0 where τ_0_0 : ObjectMapper.ImmutableMappable>",
+          "sugared_genericSig": "<T where T : ObjectMapper.ImmutableMappable>",
+          "static": true,
+          "declAttributes": [
+            "Final"
+          ],
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "responseArray",
+          "printedName": "responseArray(queue:keyPath:context:completionHandler:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "DynamicSelf",
+              "printedName": "Self"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "DispatchQueue",
+              "printedName": "Dispatch.DispatchQueue",
+              "hasDefaultArg": true,
+              "usr": "c:objc(cs)OS_dispatch_queue"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "Swift.String?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "String",
+                  "printedName": "Swift.String",
+                  "usr": "s:SS"
+                }
+              ],
+              "hasDefaultArg": true,
+              "usr": "s:Sq"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "ObjectMapper.MapContext?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "MapContext",
+                  "printedName": "ObjectMapper.MapContext",
+                  "usr": "s:12ObjectMapper10MapContextP"
+                }
+              ],
+              "hasDefaultArg": true,
+              "usr": "s:Sq"
+            },
+            {
+              "kind": "TypeFunc",
+              "name": "Function",
+              "printedName": "(Alamofire.DataResponse<[τ_0_0], Alamofire.AFError>) -> ()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "DataResponse",
+                  "printedName": "Alamofire.DataResponse<[τ_0_0], Alamofire.AFError>",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "Array",
+                      "printedName": "[τ_0_0]",
+                      "children": [
+                        {
+                          "kind": "TypeNominal",
+                          "name": "GenericTypeParam",
+                          "printedName": "τ_0_0"
+                        }
+                      ],
+                      "usr": "s:Sa"
+                    },
+                    {
+                      "kind": "TypeNominal",
+                      "name": "AFError",
+                      "printedName": "Alamofire.AFError",
+                      "usr": "s:9Alamofire7AFErrorO"
+                    }
+                  ],
+                  "usr": "s:9Alamofire12DataResponseV"
+                }
+              ]
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:9Alamofire11DataRequestC0A12ObjectMapperE13responseArray5queue7keyPath7context17completionHandlerACXDSo012OS_dispatch_H0C_SSSg0dE010MapContext_pSgyAA0B8ResponseVySayxGAA7AFErrorOGctAM12BaseMappableRzlF",
+          "mangledName": "$s9Alamofire11DataRequestC0A12ObjectMapperE13responseArray5queue7keyPath7context17completionHandlerACXDSo012OS_dispatch_H0C_SSSg0dE010MapContext_pSgyAA0B8ResponseVySayxGAA7AFErrorOGctAM12BaseMappableRzlF",
+          "moduleName": "AlamofireObjectMapper",
+          "genericSig": "<τ_0_0 where τ_0_0 : ObjectMapper.BaseMappable>",
+          "sugared_genericSig": "<T where T : ObjectMapper.BaseMappable>",
+          "isOpen": true,
+          "declAttributes": [
+            "DiscardableResult"
+          ],
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "responseArray",
+          "printedName": "responseArray(queue:keyPath:context:completionHandler:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "DynamicSelf",
+              "printedName": "Self"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "DispatchQueue",
+              "printedName": "Dispatch.DispatchQueue",
+              "hasDefaultArg": true,
+              "usr": "c:objc(cs)OS_dispatch_queue"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "Swift.String?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "String",
+                  "printedName": "Swift.String",
+                  "usr": "s:SS"
+                }
+              ],
+              "hasDefaultArg": true,
+              "usr": "s:Sq"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Optional",
+              "printedName": "ObjectMapper.MapContext?",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "MapContext",
+                  "printedName": "ObjectMapper.MapContext",
+                  "usr": "s:12ObjectMapper10MapContextP"
+                }
+              ],
+              "hasDefaultArg": true,
+              "usr": "s:Sq"
+            },
+            {
+              "kind": "TypeFunc",
+              "name": "Function",
+              "printedName": "(Alamofire.DataResponse<[τ_0_0], Alamofire.AFError>) -> ()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "DataResponse",
+                  "printedName": "Alamofire.DataResponse<[τ_0_0], Alamofire.AFError>",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "Array",
+                      "printedName": "[τ_0_0]",
+                      "children": [
+                        {
+                          "kind": "TypeNominal",
+                          "name": "GenericTypeParam",
+                          "printedName": "τ_0_0"
+                        }
+                      ],
+                      "usr": "s:Sa"
+                    },
+                    {
+                      "kind": "TypeNominal",
+                      "name": "AFError",
+                      "printedName": "Alamofire.AFError",
+                      "usr": "s:9Alamofire7AFErrorO"
+                    }
+                  ],
+                  "usr": "s:9Alamofire12DataResponseV"
+                }
+              ]
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:9Alamofire11DataRequestC0A12ObjectMapperE13responseArray5queue7keyPath7context17completionHandlerACXDSo012OS_dispatch_H0C_SSSg0dE010MapContext_pSgyAA0B8ResponseVySayxGAA7AFErrorOGctAM17ImmutableMappableRzlF",
+          "mangledName": "$s9Alamofire11DataRequestC0A12ObjectMapperE13responseArray5queue7keyPath7context17completionHandlerACXDSo012OS_dispatch_H0C_SSSg0dE010MapContext_pSgyAA0B8ResponseVySayxGAA7AFErrorOGctAM17ImmutableMappableRzlF",
+          "moduleName": "AlamofireObjectMapper",
+          "genericSig": "<τ_0_0 where τ_0_0 : ObjectMapper.ImmutableMappable>",
+          "sugared_genericSig": "<T where T : ObjectMapper.ImmutableMappable>",
+          "isOpen": true,
+          "declAttributes": [
+            "DiscardableResult"
+          ],
+          "funcSelfKind": "NonMutating"
+        }
+      ],
+      "declKind": "Class",
+      "usr": "s:9Alamofire11DataRequestC",
+      "mangledName": "$s9Alamofire11DataRequestC",
+      "moduleName": "Alamofire",
+      "isOpen": true,
+      "superclassUsr": "s:9Alamofire7RequestC",
+      "isExternal": true,
+      "hasMissingDesignatedInitializers": true,
+      "superclassNames": [
+        "Alamofire.Request"
+      ],
+      "conformances": [
+        {
+          "kind": "Conformance",
+          "name": "Equatable",
+          "printedName": "Equatable",
+          "usr": "s:SQ",
+          "mangledName": "$sSQ"
+        },
+        {
+          "kind": "Conformance",
+          "name": "Hashable",
+          "printedName": "Hashable",
+          "usr": "s:SH",
+          "mangledName": "$sSH"
+        },
+        {
+          "kind": "Conformance",
+          "name": "CustomStringConvertible",
+          "printedName": "CustomStringConvertible",
+          "usr": "s:s23CustomStringConvertibleP",
+          "mangledName": "$ss23CustomStringConvertibleP"
+        }
+      ]
+    }
+  ],
+  "json_format_version": 6
+}

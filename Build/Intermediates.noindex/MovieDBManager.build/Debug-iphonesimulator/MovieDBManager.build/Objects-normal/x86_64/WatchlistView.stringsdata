@@ -1,0 +1,12 @@
+{
+  "source": "/Users/ncelenli/Documents/MovieDBManager/MovieDBManager/View/WatchlistView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Watchlist"
+      }
+    ]
+  },
+  "version": 1
+}

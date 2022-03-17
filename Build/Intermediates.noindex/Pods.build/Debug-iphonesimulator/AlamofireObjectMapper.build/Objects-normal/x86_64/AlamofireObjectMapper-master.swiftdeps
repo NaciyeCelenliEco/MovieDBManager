@@ -1,0 +1,6 @@
+version: "Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)"
+options: "07e5c5d1414db8ff1aeb8d2f8f93169d7948cffa2d7ba59dd62c36ff90ce21b4"
+build_start_time: [1647504411, 260398864]
+build_end_time: [1647504411, 334321975]
+inputs:
+  "/Users/ncelenli/Documents/MovieDBManager/Pods/AlamofireObjectMapper/AlamofireObjectMapper/AlamofireObjectMapper.swift": [1647361653, 226717472]
