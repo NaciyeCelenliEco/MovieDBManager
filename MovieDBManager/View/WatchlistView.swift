@@ -13,28 +13,27 @@ struct WatchlistView: View {
     var body: some View {
         NavigationView {
             List {
-
+                
                 if self.getWatchlistState.items.isEmpty {
                     LoadingView(isLoading: self.getWatchlistState.isLoading, error: self.getWatchlistState.error, dark:true) {
                         self.getWatchlistState.getList()
                     }
-                  
+                    
                 }
                 else{
-            
-                        ForEach(self.getWatchlistState.items) { movie in
-                            NavigationLink(destination: MovieDetailView(movieId: movie.id, searchDetail: false)) {
-                                VStack(alignment: .leading) {
-                                    HStack(){
-                                        MovieCellImage(imageLoader: ImageLoader(), imageURL: URL(string: String(format: "%@%@", "https://image.tmdb.org/t/p/w500/",movie.posterPath))!)
-                                        Text(movie.originalTitle)
-                                    }
-                                   
+                    ForEach(self.getWatchlistState.items) { movie in
+                        NavigationLink(destination: MovieDetailView(movieId: movie.id, searchDetail: false)) {
+                            VStack(alignment: .leading) {
+                                HStack(){
+                                    MovieCellImage(imageLoader: ImageLoader(), imageURL: URL(string: String(format: "%@%@", "https://image.tmdb.org/t/p/w500/",movie.posterPath))!)
+                                    Text(movie.originalTitle)
                                 }
+                                
                             }
                         }
+                    }
                 }
-
+                
             }
             .navigationBarTitle("Watchlist",displayMode: .inline)
         }

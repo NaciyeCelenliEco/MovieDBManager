@@ -13,29 +13,28 @@ struct FavoritesView: View {
     var body: some View {
         NavigationView {
             List {
-               
+                
                 if self.getFavoriteState.items.isEmpty {
                     LoadingView(isLoading: self.getFavoriteState.isLoading, error: self.getFavoriteState.error , dark:true) {
                         self.getFavoriteState.getList()
                     }
-                  
-                }
-                else{
-            
-                        ForEach(self.getFavoriteState.items) { movie in
-                            NavigationLink(destination: MovieDetailView(movieId: movie.id, searchDetail: false)) {
-                                VStack(alignment: .leading) {
-                                    HStack(){
-                                        MovieCellImage(imageLoader: ImageLoader(), imageURL: URL(string: String(format: "%@%@", "https://image.tmdb.org/t/p/w500/",movie.posterPath))!)
-                                        Text(movie.originalTitle)
-                                    }
-                                   
-                                }
-                            }
-                        }
                     
                 }
-
+                else{
+                    ForEach(self.getFavoriteState.items) { movie in
+                        NavigationLink(destination: MovieDetailView(movieId: movie.id, searchDetail: false)) {
+                            VStack(alignment: .leading) {
+                                HStack(){
+                                    MovieCellImage(imageLoader: ImageLoader(), imageURL: URL(string: String(format: "%@%@", "https://image.tmdb.org/t/p/w500/",movie.posterPath))!)
+                                    Text(movie.originalTitle)
+                                }
+                                
+                            }
+                        }
+                    }
+                    
+                }
+                
             }
             .navigationBarTitle("Favorites",displayMode: .inline)
         }

@@ -29,7 +29,6 @@
 		00467DF227E13DD50065BE0E /* ActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00467DF127E13DD50065BE0E /* ActivityIndicatorView.swift */; };
 		00467DF427E1C1270065BE0E /* MovieDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00467DF327E1C1270065BE0E /* MovieDetailView.swift */; };
 		00467DF627E1C1480065BE0E /* MovieDetailState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00467DF527E1C1480065BE0E /* MovieDetailState.swift */; };
-		00467DF827E1C1FB0065BE0E /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00467DF727E1C1FB0065BE0E /* Movie.swift */; };
 		00467DFA27E1C5690065BE0E /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00467DF927E1C5680065BE0E /* ImageLoader.swift */; };
 		00467DFC27E1EDE70065BE0E /* AddFavoriteState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00467DFB27E1EDE70065BE0E /* AddFavoriteState.swift */; };
 		00467DFE27E1EE3E0065BE0E /* GetFavoriteState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00467DFD27E1EE3E0065BE0E /* GetFavoriteState.swift */; };
@@ -86,7 +85,6 @@
 		00467DF127E13DD50065BE0E /* ActivityIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorView.swift; sourceTree = "<group>"; };
 		00467DF327E1C1270065BE0E /* MovieDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailView.swift; sourceTree = "<group>"; };
 		00467DF527E1C1480065BE0E /* MovieDetailState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailState.swift; sourceTree = "<group>"; };
-		00467DF727E1C1FB0065BE0E /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		00467DF927E1C5680065BE0E /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 		00467DFB27E1EDE70065BE0E /* AddFavoriteState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFavoriteState.swift; sourceTree = "<group>"; };
 		00467DFD27E1EE3E0065BE0E /* GetFavoriteState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetFavoriteState.swift; sourceTree = "<group>"; };
@@ -242,7 +240,6 @@
 			children = (
 				00467DDA27E0FF990065BE0E /* Request.swift */,
 				00467DDB27E0FF990065BE0E /* Response.swift */,
-				00467DF727E1C1FB0065BE0E /* Movie.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -521,7 +518,6 @@
 				00467DF627E1C1480065BE0E /* MovieDetailState.swift in Sources */,
 				00467E0027E1F3290065BE0E /* AddWatchlistState.swift in Sources */,
 				00467DDD27E0FF990065BE0E /* Response.swift in Sources */,
-				00467DF827E1C1FB0065BE0E /* Movie.swift in Sources */,
 				00467E0527E1F7C50065BE0E /* WatchlistView.swift in Sources */,
 				00467DA727E0D97D0065BE0E /* ContentView.swift in Sources */,
 				00467DD327E0F0330065BE0E /* AuthState.swift in Sources */,
